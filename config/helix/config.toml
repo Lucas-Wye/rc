@@ -1,0 +1,109 @@
+# theme = "base16_transparent"
+theme = "solarized_light"
+
+[editor]
+mouse = false
+true-color = true
+# cursorline = true
+# cursorcolumn = true
+bufferline = "multiple"
+line-number = "relative"
+middle-click-paste = false
+
+[editor.search]
+smart-case = false
+wrap-around = false
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "↩ "
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = [ "mode", "file-name", "file-modification-indicator", "spinner", "diagnostics" ]
+right = [ "selections","position", "position-percentage", "total-line-numbers" ]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
+
+[editor.indent-guides]
+render = true
+character = "|" 
+skip-levels = 2
+
+[editor.file-picker]
+hidden = false
+
+[keys.insert]
+# esc = ["collapse_selection", "normal_mode"]
+esc = [
+# """:sh echo $(busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 IsAsciiMode) > /tmp/rime-state;
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s double_pinyin_flypy;
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b true;
+# """,
+"collapse_selection", "normal_mode"]
+
+[keys.normal]
+# use easy_en by default
+"i" = [
+# """:sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false;
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
+# fi""",
+"insert_mode"]
+"a" = [
+# """:sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false;
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
+# fi""",
+"append_mode"]
+"c" = [
+# """:sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false;
+#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
+# fi""",
+"change_selection"]
+
+0 = "goto_line_start"
+"$" = "goto_line_end"
+"^" = "goto_first_nonwhitespace"
+G = "goto_file_end"
+esc = ["collapse_selection", "keep_primary_selection"]
+
+# Make j and k behave as they do Vim when soft-wrap is enabled
+j = "move_line_down"
+k = "move_line_up"
+
+space.h = "jump_view_left"
+space.j = "jump_view_down"
+space.k = "jump_view_up"
+space.l = "jump_view_right"
+
+C-h = "select_references_to_symbol_under_cursor"
+C-j = "jumplist_picker"
+C-k = "hover"
+
+space.f = "file_picker_in_current_directory"
+space.F = "file_picker"
+
+# build on Windows
+space.m = [":write-all", ":run-shell-command make.bat z"]
+
+# toggle to show git-ignore
+C-t = ":toggle file-picker.git-ignore"
+
+"C-/" = "toggle_comments"
+C-s = ":w" 
+
+[keys.select]
+0 = "goto_line_start"
+"$" = "goto_line_end"
+"^" = "goto_first_nonwhitespace"
+G = "goto_file_end"
+esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
+"C-/" = "toggle_comments"
+C-s = ":w" 

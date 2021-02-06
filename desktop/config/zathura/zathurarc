@@ -1,0 +1,5 @@
+set selection-clipboard clipboard
+set default-bg "#FDF6E3"
+set recolor false
+set recolor-lightcolor "#FDF6E3"
+set recolor-darkcolor "#000000"

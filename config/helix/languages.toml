@@ -1,0 +1,113 @@
+################################################
+######### scls for any #########################
+################################################
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+max_completion_items = 20     # set max completion results len for each group: words, snippets, unicode-input
+snippets_first = true         # completions will return before snippets by default
+feature_words = true          # enable completion by word
+feature_snippets = true       # enable snippets
+feature_unicode_input = false # enable "unicode input"
+feature_paths = true          # enable path completion
+
+[language-server.scls.environment]
+RUST_LOG = "info,simple-completion-langauge-server=info"
+LOG_FILE = "/tmp/hx-scls-compl.log"
+
+
+################################################
+######### texlab for latex #####################
+################################################
+[[language]]
+name = "latex"
+language-servers = [ "scls", "texlab" ]
+
+[language-server.texlab]
+auxDirectory = "out"
+latexFormatter = "latexindent"
+
+[language-server.texlab.config.texlab.build]
+onSave = true
+executable = "latexmk"
+args = [ "%f" ]
+# forwardSearchAfter = true
+
+[language-server.texlab.config.texlab.chktex]
+onEdit = true
+onOpenAndSave = true
+
+# [language-server.texlab.forwardSearch]
+# executable = "zathura"
+# args = [ "--synctex-forward", "%l:%c:%f", "%p" ]
+
+
+################################################
+######### tinymist for typst ###################
+################################################
+[[language]]
+name = "typst"
+scope = "source.typst"
+injection-regex = "typst"
+roots = []
+comment-token = "//"
+file-types = ["typ"]
+indent = { tab-width = 4, unit = " " }
+text-width = 100
+soft-wrap.wrap-at-text-width = true
+language-servers = [ "scls", "tinymist" ]
+# auto-format = true
+
+[language-server.tinymist]
+command = "tinymist"
+config = { exportPdf = "never", outputPath = "$root/out_$name.pdf", formatterMode = "typstyle" }
+
+
+################################################
+######### svls for verilog #####################
+################################################
+[[language]]
+name = "verilog"
+language-servers = ["scls", "svls"]
+
+[language-server.svls]
+command = "svls"
+
+
+################################################
+######### more language settings ###############
+################################################
+[[language]]
+name = "rust"
+language-servers = [ "scls", "rust-analyzer" ]
+
+[[language]]
+name = "git-commit"
+language-servers = [ "scls" ]
+
+[[language]]
+name = "c"
+language-servers = [ "scls", "clangd" ]
+
+[[language]]
+name = "python"
+language-servers = [ "scls", "pylsp" ]
+
+[[language]]
+name = "markdown"
+language-servers = [ "scls" ]
+
+[[language]]
+name = "make"
+language-servers = [ "scls" ]
+
+[[language]]
+name = "scala"
+language-servers = [ "scls", "metals"]
+scope = "source.scala"
+roots = ["build.sbt", "build.sc", "build.gradle", "build.gradle.kts", "pom.xml", ".scala-build"]
+file-types = ["scala", "sbt", "sc"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 4, unit = "  " }

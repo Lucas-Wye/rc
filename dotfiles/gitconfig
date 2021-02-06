@@ -1,0 +1,28 @@
+[user]
+	name = Lucas-Wye
+	email = lustrew@foxmail.com
+[alias]
+	cl = clone
+	rs = reset
+	rb = rebase
+	st = status
+	br = branch
+	co = commit
+	ch = checkout
+	re = remote
+	ps = push
+	pl = pull
+	logs = log --stat
+	last = log -1 HEAD
+	logl = log --oneline
+	unstage = reset HEAD --
+[core]
+	editor = 'hx'
+[pull]
+	rebase = true
+[push]
+	default = matching
+#[http]
+#	proxy = socks5://127.0.0.1:7701
+#[https]
+#	proxy = socks5://127.0.0.1:7701

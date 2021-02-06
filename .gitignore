@@ -1,0 +1,6 @@
+rime/sync
+rime/build
+rime/*.userdb
+rime/user.yaml
+rime/installation.yaml
+rime/weasel.custom.yaml

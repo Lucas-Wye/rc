@@ -1,0 +1,14 @@
+[user]
+        email = lucas.zw.ye@outlook.com
+        name = Lucas
+
+[alias]
+        st = status
+        br = branch
+        ch = checkout
+        cl = clone
+        rb = rebase
+        co = commit
+        unstage = reset HEAD --
+        last = log -1 HEAD
+        logl = log --oneline

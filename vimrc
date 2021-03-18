@@ -42,8 +42,6 @@ set smartcase
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
-inoremap < <><ESC>i
-inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 
 " mapping
@@ -78,6 +76,7 @@ let g:tex_conceal='abdmg'
 set guifont=Consolas:h12
 
 " for Verilog
-inoremap bev beginend<ESC>2hi
-inoremap alv always @ ()<ESC>i
-inoremap mov module<space>endmodule<ESC>8hi
+inoremap bev begin<CR>end<ESC>k$a
+inoremap alv always<space>@<space>() begin<CR>end<ESC>k$b2hi
+inoremap mov module<CR>endmodule<ESC>8hi
+inoremap cav case()<CR>endcase<ESC>ki

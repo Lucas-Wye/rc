@@ -65,6 +65,9 @@ call plug#end()
 
 " for vimtex
 let g:tex_flavor='latexmk'
+let g:vimtex_texcount_custom_arg=' -ch -total'
+au FileType tex map <buffer> <silent>  <leader>lw :VimtexCountWords!  <CR><CR>
+let g:Tex_ViewRule_pdf = 'C:\Users\ENIAC\AppData\Local\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "gvim -c \":RemoteOpen +\%l \%f\""'
 "let g:vimtex_view_method='zathura'
 " show the compiler hint
 let g:vimtex_quickfix_mode=1

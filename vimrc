@@ -55,7 +55,12 @@ map ru :set splitbelow<CR>:split<CR>
 map rd :set nosplitbelow<CR>:split<CR>
 
 " https://github.com/junegunn/vim-plug
+" For Windows
+" iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+"     ni $HOME/vimfiles/autoload/plug.vim -Force
 call plug#begin('~/vimfiles/plugged')
+" For Linux
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
@@ -67,7 +72,9 @@ call plug#end()
 let g:tex_flavor='latexmk'
 let g:vimtex_texcount_custom_arg=' -ch -total'
 au FileType tex map <buffer> <silent>  <leader>lw :VimtexCountWords!  <CR><CR>
-let g:Tex_ViewRule_pdf = 'C:\Users\ENIAC\AppData\Local\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "gvim -c \":RemoteOpen +\%l \%f\""'
+" Path of SumatraPDF, For Windows
+let g:Tex_ViewRule_pdf = '~\AppData\Local\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "gvim -c \":RemoteOpen +\%l \%f\""'
+" For Linux
 "let g:vimtex_view_method='zathura'
 " show the compiler hint
 let g:vimtex_quickfix_mode=1

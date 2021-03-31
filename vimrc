@@ -55,20 +55,21 @@ map ru :set splitbelow<CR>:split<CR>
 map rd :set nosplitbelow<CR>:split<CR>
 
 " https://github.com/junegunn/vim-plug
-" For Windows
+" FOR Windows
 " iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-"     ni $HOME/vimfiles/autoload/plug.vim -Force
+" ni $HOME/vimfiles/autoload/plug.vim -Force
 call plug#begin('~/vimfiles/plugged')
-" For Linux
+" FOR Linux
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
-Plug 'lervag/vimtex'
 Plug 'jceb/vim-orgmode'
+Plug 'lervag/vimtex'
+Plug 'lvht/mru'
 call plug#end()
 
-" for vimtex
+" FOR vimtex
 let g:tex_flavor='latexmk'
 let g:vimtex_texcount_custom_arg=' -ch -total'
 au FileType tex map <buffer> <silent>  <leader>lw :VimtexCountWords!  <CR><CR>
@@ -82,10 +83,16 @@ let g:vimtex_quickfix_mode=1
 set conceallevel=1
 let g:tex_conceal='abdmg'
 
-" for gVim
+" FOR mru
+" set max lenght for the mru file list
+let g:mru_file_list_size = 7 " default value
+" set path pattens that should be ignored
+let g:mru_ignore_patterns = 'fugitive\|\.git/\|\_^/tmp/' " default value
+
+" FOR gVim
 set guifont=Consolas:h12
 
-" for Verilog
+" FOR Verilog
 inoremap bev begin<CR>end<ESC>k$a
 inoremap alv always<space>@<space>() begin<CR>end<ESC>k$b2hi
 inoremap mov module<CR>endmodule<ESC>8hi

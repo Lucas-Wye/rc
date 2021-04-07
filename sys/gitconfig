@@ -1,14 +1,21 @@
 [user]
-        email = lucas.zw.ye@outlook.com
-        name = Lucas
-
+	name = Lucas-Wye
+	email = lustrew@foxmail.com
 [alias]
-        st = status
-        br = branch
-        ch = checkout
-        cl = clone
-        rb = rebase
-        co = commit
-        unstage = reset HEAD --
-        last = log -1 HEAD
-        logl = log --oneline
+	cl = clone
+	rs = reset
+	rb = rebase
+	st = status
+	br = branch
+	co = commit
+	ch = checkout
+	logs = log --stat
+	last = log -1 HEAD
+	logl = log --oneline
+	unstage = reset HEAD --
+[core]
+	editor = 'vim'
+[pull]
+	rebase = false
+[push]
+	default = matching

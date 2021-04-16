@@ -65,53 +65,52 @@
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
     "schemes":
     [
-{
-  "name": "ayu_light",
-  "black": "#000000",
-  "red": "#ff3333",
-  "green": "#86b300",
-  "yellow": "#f29718",
-  "blue": "#41a6d9",
-  "purple": "#f07178",
-  "cyan": "#4dbf99",
-  "white": "#ffffff",
-  "brightBlack": "#323232",
-  "brightRed": "#ff6565",
-  "brightGreen": "#b8e532",
-  "brightYellow": "#ffc94a",
-  "brightBlue": "#73d8ff",
-  "brightPurple": "#ffa3aa",
-  "brightCyan": "#7ff1cb",
-  "brightWhite": "#ffffff",
-  "background": "#fafafa",
-  "foreground": "#5c6773",
-  "cursorColor": "#ff6a00",
-  "selectionBackground": "#f0eee4"
-},
-{
-  "name": "Github",
-  "black": "#3e3e3e",
-  "red": "#970b16",
-  "green": "#07962a",
-  "yellow": "#f8eec7",
-  "blue": "#003e8a",
-  "purple": "#e94691",
-  "cyan": "#89d1ec",
-  "white": "#ffffff",
-  "brightBlack": "#666666",
-  "brightRed": "#de0000",
-  "brightGreen": "#87d5a2",
-  "brightYellow": "#f1d007",
-  "brightBlue": "#2e6cba",
-  "brightPurple": "#ffa29f",
-  "brightCyan": "#1cfafe",
-  "brightWhite": "#ffffff",
-  "background": "#f4f4f4",
-  "foreground": "#3e3e3e",
-  "cursorColor": "#3f3f3f",
-  "selectionBackground": "#a9c1e2"
-}
-
+        {
+          "name": "ayu_light",
+          "black": "#000000",
+          "red": "#ff3333",
+          "green": "#86b300",
+          "yellow": "#f29718",
+          "blue": "#41a6d9",
+          "purple": "#f07178",
+          "cyan": "#4dbf99",
+          "white": "#ffffff",
+          "brightBlack": "#323232",
+          "brightRed": "#ff6565",
+          "brightGreen": "#b8e532",
+          "brightYellow": "#ffc94a",
+          "brightBlue": "#73d8ff",
+          "brightPurple": "#ffa3aa",
+          "brightCyan": "#7ff1cb",
+          "brightWhite": "#ffffff",
+          "background": "#fafafa",
+          "foreground": "#5c6773",
+          "cursorColor": "#ff6a00",
+          "selectionBackground": "#f0eee4"
+        },
+        {
+          "name": "Github",
+          "black": "#3e3e3e",
+          "red": "#970b16",
+          "green": "#07962a",
+          "yellow": "#f8eec7",
+          "blue": "#003e8a",
+          "purple": "#e94691",
+          "cyan": "#89d1ec",
+          "white": "#ffffff",
+          "brightBlack": "#666666",
+          "brightRed": "#de0000",
+          "brightGreen": "#87d5a2",
+          "brightYellow": "#f1d007",
+          "brightBlue": "#2e6cba",
+          "brightPurple": "#ffa29f",
+          "brightCyan": "#1cfafe",
+          "brightWhite": "#ffffff",
+          "background": "#f4f4f4",
+          "foreground": "#3e3e3e",
+          "cursorColor": "#3f3f3f",
+          "selectionBackground": "#a9c1e2"
+        }
     ],
 
     // Add custom actions and keybindings to this array.
@@ -132,6 +131,10 @@
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
+<<<<<<< HEAD
         { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+x" }
+=======
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+a" }
+>>>>>>> 367a75b41f913c599df6aad5d7242771ce4059ac
     ]
 }

@@ -1,5 +1,5 @@
-syntax on 
-filetype on 
+syntax on
+filetype on
 filetype indent on
 filetype plugin on
 filetype plugin indent on
@@ -14,7 +14,7 @@ set nocompatible
 
 set number
 set relativenumber
-set history=100 
+set history=100
 
 set cursorline
 set wrap
@@ -38,20 +38,21 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Insert Mode
 " auto complete
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 inoremap " ""<ESC>i
 
-" mapping
-map s <nop>
-map S :w<CR>
-map Q :q<CR>
-map R :source $MYVIMRC<CR>
-cmap rr :set splitright<CR>:vsplit<CR>
-cmap rl :set nosplitright<CR>:vsplit<CR>
-cmap <C-d> <C-f>
+" Normal Mode
+nmap s <nop>
+nmap S :w<CR>
+nmap Q :q<CR>
+nmap R :source $MYVIMRC<CR>
+nmap rr :set splitright<CR>:vsplit<CR>
+nmap rl :set nosplitright<CR>:vsplit<CR>
+nmap <C-d> <C-f>
 
-" FOR gVim
+" for gVim
 set guifont=Consolas:h12

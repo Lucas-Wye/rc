@@ -131,10 +131,6 @@
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
-<<<<<<< HEAD
-        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+x" }
-=======
         { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+a" }
->>>>>>> 367a75b41f913c599df6aad5d7242771ce4059ac
     ]
 }

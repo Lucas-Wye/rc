@@ -5,5 +5,5 @@ for file in `ls sys/`; do
 done
 
 # Rime Config For Linux
-cp rime/double_pinyin_flypy.* ~/.config/ibus/rime
-cp rime/ibus_rime.yaml rime/default.* ~/.config/ibus/rime
+#cp rime/double_pinyin_flypy.* ~/.config/ibus/rime
+#cp rime/ibus_rime.yaml rime/default.* ~/.config/ibus/rime

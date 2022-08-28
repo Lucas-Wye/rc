@@ -9,6 +9,9 @@
 	br = branch
 	co = commit
 	ch = checkout
+	re = remote
+	ps = push
+	pl = pull
 	logs = log --stat
 	last = log -1 HEAD
 	logl = log --oneline

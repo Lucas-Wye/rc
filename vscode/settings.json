@@ -1,0 +1,159 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": "paste",
+            "keys": "shift+insert"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+insert"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+s"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "bellStyle": "none",
+            "colorScheme": "SnazzyL",
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "face": "Consolas"
+            },
+            "useAtlasEngine": false
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#282A36",
+            "black": "#282A36",
+            "blue": "#57C7FF",
+            "brightBlack": "#686868",
+            "brightBlue": "#57C7FF",
+            "brightCyan": "#9AEDFE",
+            "brightGreen": "#5AF78E",
+            "brightPurple": "#FF6AC1",
+            "brightRed": "#FF5C57",
+            "brightWhite": "#EFF0EB",
+            "brightYellow": "#F3F99D",
+            "cursorColor": "#97979B",
+            "cyan": "#9AEDFE",
+            "foreground": "#FAFAFA",
+            "green": "#5AF78E",
+            "name": "Snazzy",
+            "purple": "#FF6AC1",
+            "red": "#FF5C57",
+            "selectionBackground": "#3E404A",
+            "white": "#F1F1F0",
+            "yellow": "#F3F99D"
+        },
+        {
+            "background": "#FFFFFF",
+            "black": "#EFF0EB",
+            "blue": "#09A1ED",
+            "brightBlack": "#686868",
+            "brightBlue": "#09A1ED",
+            "brightCyan": "#13BBB7",
+            "brightGreen": "#2DAE58",
+            "brightPurple": "#F767BB",
+            "brightRed": "#FF5C57",
+            "brightWhite": "#EFF0EB",
+            "brightYellow": "#CF9C00",
+            "cursorColor": "#97979B",
+            "cyan": "#13BBB7",
+            "foreground": "#282A36",
+            "green": "#2DAE58",
+            "name": "SnazzyL",
+            "purple": "#F767BB",
+            "red": "#FF5C57",
+            "selectionBackground": "#3E404A",
+            "white": "#F1F1F0",
+            "yellow": "#CF9C00"
+        }
+    ],
+    "theme": "light",
+    "themes": 
+    [
+        {
+            "name": "legacyDark",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacyLight",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacySystem",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "system",
+                "useMica": false
+            }
+        }
+    ]
+}

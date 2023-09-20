@@ -1,9 +1,10 @@
-$out_dir="out";
+$out_dir="D:\\tmp";
 
 $preview_mode=1;
 # $pdf_previewer=evince;
-
 $bibtex_use=1.5;# 自动检测根据条件清理 bbl 文件
+$clean_ext='thm bbl hd loe synctex.gz xdv run.xml';
+$makeindex='makeindex -s gind.ist %O -o %D %S';
 
 # pdflatex
 $pdf_mode=1;
@@ -13,11 +14,6 @@ $pdflatex="pdflatex -file-line-error -halt-on-error -interaction=nonstopmode -sy
 # -synctex=1 开启 synctex
 
 # xelatex
-$pdf_mode=5;
-$xelatex="xelatex -file-line-error -halt-on-error -interaction=nonstopmode -no-pdf -synctex=1 %O %S";
-$xdvipdfmx="xdvipdfmx -q -E -o %D %O %S";
-
-$clean_ext='thm bbl hd loe synctex.gz xdv run.xml';
-$makeindex='makeindex -s gind.ist %O -o %D %S';
-
-@default_files=('*.tex')
+# $pdf_mode=5;
+# $xelatex="xelatex -file-line-error -halt-on-error -interaction=nonstopmode -no-pdf -synctex=1 %O %S";
+# $xdvipdfmx="xdvipdfmx -q -E -o %D %O %S";

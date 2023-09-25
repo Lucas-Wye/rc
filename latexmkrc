@@ -1,7 +1,7 @@
 $out_dir="D:\\tmp";
 
 $preview_mode=1;
-# $pdf_previewer=evince;
+$pdf_previewer="$HOME\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe";
 $bibtex_use=1.5;# 自动检测根据条件清理 bbl 文件
 $clean_ext='thm bbl hd loe synctex.gz xdv run.xml';
 $makeindex='makeindex -s gind.ist %O -o %D %S';
@@ -17,3 +17,7 @@ $pdflatex="pdflatex -file-line-error -halt-on-error -interaction=nonstopmode -sy
 # $pdf_mode=5;
 # $xelatex="xelatex -file-line-error -halt-on-error -interaction=nonstopmode -no-pdf -synctex=1 %O %S";
 # $xdvipdfmx="xdvipdfmx -q -E -o %D %O %S";
+
+# lualatex
+# $pdf_mode=4;
+# $lualatex="lualatex -outdir=out";

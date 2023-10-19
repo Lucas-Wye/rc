@@ -3,6 +3,7 @@ local opts = {
     noremap = true,      -- non-recursive
     silent = true,       -- do not show message
 }
+vim.g.mapleader = " "
 
 -----------------
 -- Normal mode --
@@ -10,26 +11,47 @@ local opts = {
 
 -- Hint: see `:h vim.map.set()`
 -- Better window navigation
-vim.keymap.set('n', '<C-h>', '<C-w>h', opts)
-vim.keymap.set('n', '<C-j>', '<C-w>j', opts)
-vim.keymap.set('n', '<C-k>', '<C-w>k', opts)
-vim.keymap.set('n', '<C-l>', '<C-w>l', opts)
+vim.keymap.set('n', '<leader>h', '<C-w>h', opts)
+vim.keymap.set('n', '<leader>j', '<C-w>j', opts)
+vim.keymap.set('n', '<leader>k', '<C-w>k', opts)
+vim.keymap.set('n', '<leader>l', '<C-w>l', opts)
+
+-- disable 's'
+vim.keymap.set('n', 's', '<nop>', opts)
 
 -- split windows
-vim.keymap.set('n', 'rr', ':vsplit<CR>:n<CR>', opts)
-vim.keymap.set('n', 'rl', ':split<CR>', opts)
+vim.keymap.set('n', 'sr',      ':vsplit<CR>:n<CR>', opts)
+vim.keymap.set('n', 'sl',      ':split<CR>',        opts)
 
--- Resize with arrows
-vim.keymap.set('n', '<C-Up>', ':resize -2<CR>', opts)
-vim.keymap.set('n', '<C-Down>', ':resize +2<CR>', opts)
-vim.keymap.set('n', '<C-Left>', ':vertical resize -2<CR>', opts)
-vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
+vim.keymap.set('n', 'su',     ':set nosplitbelow<CR>:split<CR>:set splitbelow<CR>',  opts)
+vim.keymap.set('n', 'sd',     ':set splitbelow<CR>:split<CR>',                       opts)
+vim.keymap.set('n', 'sl',     ':set nosplitright<CR>:vsplit<CR>:set splitright<CR>', opts)
+vim.keymap.set('n', 'sr',     ':set splitright<CR>:vsplit<CR>',                      opts)
+
+-- resize
+vim.keymap.set('n', '<up>',    ':res +5<CR>',            opts)
+vim.keymap.set('n', '<down>',  ':res -5<CR>',            opts)
+vim.keymap.set('n', '<left>',  ':vertical resize-5<CR>', opts)
+vim.keymap.set('n', '<right>', ':vertical resize+5<CR>', opts)
+
+-- rotate windows
+vim.keymap.set('n', 'srh', '<C-w>b<C-w>K', opts)
+vim.keymap.set('n', 'srv', '<C-w>b<C-w>H', opts)
+
+-- tab
+vim.keymap.set('n', 'tu',  ':tabe<CR>', opts)
+vim.keymap.set('n', 'tU',  ':tab split<CR>', opts)
+vim.keymap.set('n', 'tn',  ':-tabnext<CR>', opts)
+vim.keymap.set('n', 'ti',  ':+tabnext<CR>', opts)
+vim.keymap.set('n', 'tmn', ':-tabmove<CR>', opts)
+vim.keymap.set('n', 'tmi', ':+tabmove<CR>', opts)
 
 -----------------
 -- Visual mode --
 -----------------
-
--- Hint: start visual mode with the same area as the previous area and the same mode
+-- 配置<, >来缩进
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
+-- 搜索选中的内容
+vim.keymap.set('v', '//', 'y/<c-r>"<cr>', opts)
 

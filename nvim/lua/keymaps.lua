@@ -39,12 +39,9 @@ vim.keymap.set('n', 'srh', '<C-w>b<C-w>K', opts)
 vim.keymap.set('n', 'srv', '<C-w>b<C-w>H', opts)
 
 -- tab
-vim.keymap.set('n', 'tu',  ':tabe<CR>', opts)
-vim.keymap.set('n', 'tU',  ':tab split<CR>', opts)
-vim.keymap.set('n', 'tn',  ':-tabnext<CR>', opts)
-vim.keymap.set('n', 'ti',  ':+tabnext<CR>', opts)
-vim.keymap.set('n', 'tmn', ':-tabmove<CR>', opts)
-vim.keymap.set('n', 'tmi', ':+tabmove<CR>', opts)
+vim.keymap.set('n', 'ts',        ':tab split<CR>', opts)
+vim.keymap.set('n', '<Tab>',   ':+tabnext<CR>', opts)
+vim.keymap.set('n', '<S-Tab>', ':-tabnext<CR>', opts)
 
 -----------------
 -- Visual mode --

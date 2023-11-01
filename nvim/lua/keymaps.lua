@@ -50,5 +50,7 @@ vim.keymap.set('n', '<S-Tab>', ':-tabnext<CR>', opts)
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
 -- 搜索选中的内容
-vim.keymap.set('v', '//', 'y/<c-r>"<cr>', opts)
+vim.keymap.set('v', '@', 'y/<c-r>"<cr>', opts)
+-- 自动选中单词并搜索
+vim.keymap.set('v', '//', 'ey/<c-r>"<cr>', opts)
 

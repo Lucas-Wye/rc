@@ -15,8 +15,8 @@ vim.env.NVIM_TUI_ENABLE_TRUE_COLOR = 1
 vim.opt.showmode = false -- we are experienced, wo don't need the "-- INSERT --" mode hint
 vim.opt.mouse = ""
 vim.opt.list = true -- show tab, space, etc.
-vim.opt.listchars = 'tab:|\\ ,trail:▫'
-vim.opt.colorcolumn = '100'
+vim.opt.listchars = 'tab:| ,trail:▫'
+vim.opt.colorcolumn = '97'
 
 -- Window
 vim.opt.splitbelow = true -- open new vertical split bottom

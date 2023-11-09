@@ -56,7 +56,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-MY_COLOR="\e[3;31m"
+MY_COLOR="\e[3;32m"
 MY_COLOR_END="\e[00m"
 MY_PS1="${MY_COLOR}\W${MY_COLOR_END} "
 if [ "$color_prompt" = yes ]; then

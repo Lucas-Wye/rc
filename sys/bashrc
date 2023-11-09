@@ -56,17 +56,20 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+MY_COLOR="\e[3;31m"
+MY_COLOR_END="\e[00m"
+MY_PS1="${MY_COLOR}\W${MY_COLOR_END} "
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[01;32m\]\W\[\033[00m\] '
+    PS1="${MY_PS1}"
 else
-    PS1='\[\033[01;32m\]\W\[\033[00m\] '
+    PS1="${MY_PS1}"
 fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="${MY_PS1}"
     ;;
 *)
     ;;
@@ -123,5 +126,4 @@ alias nv='nvim'
 alias cd1='cd ..'
 alias cd2='cd ../..'
 alias rl='realpath'
-alias tm='tmux a -t 0'
 

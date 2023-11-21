@@ -49,4 +49,5 @@ vim.opt.foldlevelstart = 99
 vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif]])
 
 -- Color
-vim.cmd('colorscheme zellner')
+-- vim.cmd('colorscheme zellner')
+-- vim.cmd('colorscheme delek')

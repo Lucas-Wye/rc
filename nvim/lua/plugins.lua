@@ -55,6 +55,22 @@ return require('packer').startup(function(use)
           config = function() require("nvim-autopairs").setup {} end
         }
         use 'navarasu/onedark.nvim'
+        use {
+          'nvim-telescope/telescope.nvim', tag = '0.1.4',
+          requires = {
+            {
+              'nvim-lua/plenary.nvim'
+            },
+            {
+              'nvim-treesitter/nvim-treesitter',
+              run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+            }
+          }
+        }
+ 
+
+
+
 
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins

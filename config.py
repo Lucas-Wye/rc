@@ -18,7 +18,12 @@ def config_file(file, base_file, extra=""):
     bak_file = os.path.join(file + ".bak")
     sys_file = os.path.join(home_dir, base_file)
 
-    shutil.copy2(sys_file, bak_file)
+    try:
+        shutil.copy2(sys_file, bak_file)
+    except OSError as e:
+        print(f"Failed to copy file: {e}")
+        shutil.copy2(my_file, bak_file)
+
     shutil.move(my_file, sys_file)
     shutil.move(bak_file, my_file)
 

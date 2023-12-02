@@ -16,17 +16,20 @@ vim.keymap.set('n', '<leader>j', '<C-w>j', opts)
 vim.keymap.set('n', '<leader>k', '<C-w>k', opts)
 vim.keymap.set('n', '<leader>l', '<C-w>l', opts)
 
+-- 关闭所有buffer
+vim.keymap.set('n', '<leader>bd', ':bufdo bd<CR>', opts)
+
 -- disable 's'
 vim.keymap.set('n', 's', '<nop>', opts)
 
 -- split windows
-vim.keymap.set('n', 'sr',      ':vsplit<CR>:n<CR>', opts)
-vim.keymap.set('n', 'sl',      ':split<CR>',        opts)
+vim.keymap.set('n', 'sr', ':vsplit<CR>:n<CR>', opts)
+vim.keymap.set('n', 'sl', ':split<CR>',        opts)
 
-vim.keymap.set('n', 'su',     ':set nosplitbelow<CR>:split<CR>:set splitbelow<CR>',  opts)
-vim.keymap.set('n', 'sd',     ':set splitbelow<CR>:split<CR>',                       opts)
-vim.keymap.set('n', 'sl',     ':set nosplitright<CR>:vsplit<CR>:set splitright<CR>', opts)
-vim.keymap.set('n', 'sr',     ':set splitright<CR>:vsplit<CR>',                      opts)
+vim.keymap.set('n', 'su', ':set nosplitbelow<CR>:split<CR>:set splitbelow<CR>',  opts)
+vim.keymap.set('n', 'sd', ':set splitbelow<CR>:split<CR>',                       opts)
+vim.keymap.set('n', 'sl', ':set nosplitright<CR>:vsplit<CR>:set splitright<CR>', opts)
+vim.keymap.set('n', 'sr', ':set splitright<CR>:vsplit<CR>',                      opts)
 
 -- resize
 vim.keymap.set('n', '<up>',    ':res +5<CR>',            opts)
@@ -49,9 +52,9 @@ function cycle_tabs()
     vim.cmd('tabnext')
   end
 end
-vim.keymap.set('n', 'ts',      ':tab split<CR>', opts)
+vim.keymap.set('n', 'ts',      ':tab split<CR>',        opts)
 vim.keymap.set('n', '<Tab>',   ':lua cycle_tabs()<CR>', opts)
-vim.keymap.set('n', '<S-Tab>', ':-tabnext<CR>', opts)
+vim.keymap.set('n', '<S-Tab>', ':-tabnext<CR>',         opts)
 
 -----------------
 -- Visual mode --

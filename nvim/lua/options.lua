@@ -10,6 +10,7 @@ vim.opt.autoindent = true
 vim.opt.number = true -- show absolute number
 vim.opt.relativenumber = true -- add numbers to each line on the left side
 vim.opt.cursorline = true -- highlight cursor line underneath the cursor horizontally
+vim.opt.cursorcolumn = true
 vim.opt.termguicolors = true -- enable 24-bit RGB color in the TUI
 vim.env.NVIM_TUI_ENABLE_TRUE_COLOR = 1
 vim.opt.showmode = false -- we are experienced, wo don't need the "-- INSERT --" mode hint

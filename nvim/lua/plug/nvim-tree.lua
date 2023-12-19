@@ -56,3 +56,4 @@ local opts = {
     silent = true,       -- do not show message
 }
 vim.keymap.set('n', '<F2>', ':NvimTreeToggle<CR>', opts)
+vim.keymap.set('n', '<F3>', ':NvimTreeFindFile<CR>', opts)

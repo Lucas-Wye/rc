@@ -31,6 +31,9 @@ vim.keymap.set('n', 'sd', ':set splitbelow<CR>:split<CR>',                      
 vim.keymap.set('n', 'sl', ':set nosplitright<CR>:vsplit<CR>:set splitright<CR>', opts)
 vim.keymap.set('n', 'sr', ':set splitright<CR>:vsplit<CR>',                      opts)
 
+-- show search count
+vim.keymap.set('n', '<leader>n', ':lua print(vim.inspect(vim.fn.searchcount { maxcount = 0 }))<CR>', opts)
+
 -- resize
 vim.keymap.set('n', '<up>',    ':res +5<CR>',            opts)
 vim.keymap.set('n', '<down>',  ':res -5<CR>',            opts)

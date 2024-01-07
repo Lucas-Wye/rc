@@ -54,7 +54,9 @@ return require('packer').startup(function(use)
           "windwp/nvim-autopairs",
           config = function() require("nvim-autopairs").setup {} end
         }
-        use 'navarasu/onedark.nvim'
+
+        use {'nyoom-engineering/oxocarbon.nvim'}
+
         use {
           'nvim-telescope/telescope.nvim', tag = '0.1.4',
           requires = {
@@ -67,10 +69,6 @@ return require('packer').startup(function(use)
             }
           }
         }
- 
-
-
-
 
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins

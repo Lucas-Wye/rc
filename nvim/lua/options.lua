@@ -52,4 +52,3 @@ vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe 
 -- Color
 vim.opt.background = 'light'
 -- vim.cmd('colorscheme zellner')
-vim.cmd("colorscheme oxocarbon")

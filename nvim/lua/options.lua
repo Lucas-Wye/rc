@@ -1,3 +1,7 @@
+-- File
+vim.opt.filetype = 'plugin'
+vim.opt.syntax = 'enable'
+
 -- Tab
 vim.opt.tabstop = 4 -- number of visual spaces per TAB
 vim.opt.smarttab = true

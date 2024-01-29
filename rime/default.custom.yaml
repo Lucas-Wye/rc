@@ -2,7 +2,7 @@ patch:
   schema_list:
     - {schema: double_pinyin_flypy}
   # 候选词个数
-  menu/page_size: 6
+  menu/page_size: 7
   # 水平候选词
   style/horizontal: true
   # 按 CapsLock 输出大写英文字母
@@ -13,3 +13,5 @@ patch:
     Control_R: noop
     Shift_L: commit_code
     Shift_R: inline_ascii
+  # 主題
+  style/color_scheme: tongwenfeng

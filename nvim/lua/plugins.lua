@@ -54,8 +54,7 @@ return require('packer').startup(function(use)
           "windwp/nvim-autopairs",
           config = function() require("nvim-autopairs").setup {} end
         }
-        -- theme
-        use {'nyoom-engineering/oxocarbon.nvim'}
+
         -- search
         use {
           'nvim-telescope/telescope.nvim', tag = '0.1.4',
@@ -69,8 +68,12 @@ return require('packer').startup(function(use)
             }
           }
         }
+
         -- latex
         use 'lervag/vimtex'
+
+        -- color theme
+        use 'Mofiqul/vscode.nvim'
 
 
         -- Automatically set up your configuration after cloning packer.nvim

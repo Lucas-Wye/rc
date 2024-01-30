@@ -8,6 +8,6 @@ require('plug/nvim-tree')
 require('plug/vim-airline')
 require('plug/nvim-autopairs')
 require('plug/telescope')
-require('plug/color-scheme')
 require('plug/vimtex')
+require('plug/vscode-theme')
 

@@ -1,6 +1,8 @@
 patch:
   schema_list:
-    - {schema: double_pinyin_flypy}
+    - schema: double_pinyin_flypy
+    - schema: luna_pinyin
+    - schema: easy_en
   # 候选词个数
   menu/page_size: 7
   # 水平候选词
@@ -13,5 +15,5 @@ patch:
     Control_R: noop
     Shift_L: commit_code
     Shift_R: inline_ascii
-  # 主題
   style/color_scheme: tongwenfeng
+...

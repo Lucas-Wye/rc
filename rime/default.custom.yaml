@@ -15,5 +15,4 @@ patch:
     Control_R: noop
     Shift_L: commit_code
     Shift_R: inline_ascii
-  style/color_scheme: tongwenfeng
 ...

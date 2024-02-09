@@ -41,10 +41,10 @@ patch:
 
     - {click: Keyboard_number, width: 12.5, key_back_color: bgn, key_text_color: tgn}
     - {click: liquid_keyboard_switch, width: 12.5, key_text_size: "18", key_back_color: bgn, key_text_color: tgn}
-    - {click: ',', label: '，', key_back_color: bh4, key_text_color: th4}
+    - {click: ',', key_back_color: bh4, key_text_color: th4}
     - {click: space, width: 30, key_back_color: bkg, key_text_color: tkg}
-    - {click: '.', label: '。', key_back_color: bh4, key_text_color: th4}
-    - {click: '/', key_text_size: "18", key_back_color: bh4, key_text_color: th4}
+    - {click: '?', key_back_color: bh4, key_text_color: th4}
+    - {click: ':', key_text_size: "18", key_back_color: bh4, key_text_color: th4}
     - {click: Return, composing: Return1, width: 15, key_back_color: benter, key_text_color: tenter}
 
   "preset_keyboards/number/keys":
@@ -53,26 +53,26 @@ patch:
     - {click: 3}
     - {click: '+', long_click: '#', key_back_color: bgn, key_text_color: tgn}
     - {click: '-', long_click: '%', key_back_color: bgn, key_text_color: tgn}
-    - {click: '/', long_click: '\', key_back_color: bgn, key_text_color: tgn}
+    - {click: ';', key_back_color: bgn, key_text_color: tgn}
 
     - {click: 4}
     - {click: 5}
     - {click: 6}
-    - {click: '*', key_back_color: bgn, key_text_color: tgn}
-    - {click: '_', long_click: '[]{Left}', key_back_color: bgn, key_text_color: tgn}
+    - {click: '~', key_back_color: bgn, key_text_color: tgn}
+    - {click: '_', key_back_color: bgn, key_text_color: tgn}
     - {click: '(){Left}', key_back_color: bgn, key_text_color: tgn}
 
     - {click: 7}
     - {click: 8}
     - {click: 9}
     - {click: ., key_back_color: bgn, key_text_color: tgn}
-    - {click: '[]{Left}', long_click: '{}{Left}', key_back_color: bgn, key_text_color: tgn}
+    - {click: ':', key_back_color: bgn, key_text_color: tgn}
     - {click: '=', long_click: '≠', key_back_color: bgn, key_text_color: tgn}
 
     - {click: Keyboard_default, key_back_color: bgn, key_text_color: 'tgn'}
     - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
     - {click: 0}
-    - {click: space1, key_back_color: bgn, key_text_color: tgn}
     - {click: '@', key_back_color: bgn, key_text_color: tgn}
+    - {click: space1, key_back_color: bgn, key_text_color: tgn}
     - {click: Return, key_back_color: benter, key_text_color: tenter}
 

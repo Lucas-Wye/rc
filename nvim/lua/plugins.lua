@@ -59,13 +59,7 @@ return require('packer').startup(function(use)
         use {
           'nvim-telescope/telescope.nvim', tag = '0.1.4',
           requires = {
-            {
-              'nvim-lua/plenary.nvim'
-            },
-            {
-              'nvim-treesitter/nvim-treesitter',
-              run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
-            }
+            'nvim-lua/plenary.nvim'
           }
         }
 

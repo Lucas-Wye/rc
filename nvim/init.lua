@@ -10,4 +10,5 @@ require('plug/nvim-autopairs')
 require('plug/telescope')
 require('plug/vimtex')
 require('plug/vscode-theme')
+require('plug/treesitter')
 

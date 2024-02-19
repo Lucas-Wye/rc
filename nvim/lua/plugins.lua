@@ -44,12 +44,12 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons', -- optional
           },
         }
-        use {
-          'vim-airline/vim-airline'
-        }
-        use {
-          'vim-airline/vim-airline-themes'
-        }
+        use { 'vim-airline/vim-airline' }
+        use { 'vim-airline/vim-airline-themes' }
+        -- color theme
+        use { 'Mofiqul/vscode.nvim' }
+        -- behavior
+        use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
         use {
           "windwp/nvim-autopairs",
           config = function() require("nvim-autopairs").setup {} end
@@ -63,11 +63,12 @@ return require('packer').startup(function(use)
           }
         }
 
-        -- latex
-        use 'lervag/vimtex'
-
-        -- color theme
-        use 'Mofiqul/vscode.nvim'
+        if vim.fn.has('win32') == 1 then
+            -- latex: only used in Windows
+            use { 'lervag/vimtex' }
+        end
+        -- typst
+        use { 'kaarmu/typst.vim', ft = {'typst'} }
 
 
         -- Automatically set up your configuration after cloning packer.nvim

@@ -49,7 +49,10 @@ return require('packer').startup(function(use)
         -- color theme
         use { 'Mofiqul/vscode.nvim' }
         -- behavior
-        use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+        if vim.fn.has('win32') == 0 then
+          -- not used in Windows
+          use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+        end
         use {
           "windwp/nvim-autopairs",
           config = function() require("nvim-autopairs").setup {} end
@@ -63,9 +66,9 @@ return require('packer').startup(function(use)
           }
         }
 
+        -- latex: only used in Windows
         if vim.fn.has('win32') == 1 then
-            -- latex: only used in Windows
-            use { 'lervag/vimtex' }
+          use { 'lervag/vimtex' }
         end
         -- typst
         use { 'kaarmu/typst.vim', ft = {'typst'} }

@@ -1,4 +1,8 @@
 live_config_reload = true
+[window]
+padding = { x = 7, y = 7}
+dimensions = { columns = 150, lines = 30}
+opacity = 0.9
 
 [env]
 TERM = 'xterm-256color'
@@ -43,3 +47,12 @@ family = 'JetBrainsMono Nerd Font'
 [font.italic]
 family = 'JetBrainsMono Nerd Font'
 
+[[keyboard.bindings]]
+key = "Insert"
+mods = "Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "Insert"
+mods = "Control"
+action = "Copy"

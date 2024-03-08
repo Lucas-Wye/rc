@@ -1,0 +1,24 @@
+# PS1
+MY_COLOR="\[\033[3;32m\]"
+MY_COLOR_END="\[\033[00m\]"
+MY_PS1="${MY_COLOR}\W${MY_COLOR_END} "
+if [ "$color_prompt" = yes ]; then
+    PS1="${MY_PS1}"
+else
+    PS1="${MY_PS1}"
+fi
+unset color_prompt force_color_prompt
+
+# alias
+alias cd1='cd ..'
+alias cd2='cd ../..'
+alias rl='realpath'
+
+alias gst='git st'
+alias glo='git log'
+alias gco='git co'
+alias gpl='git pl'
+alias gps='git ps'
+alias gre='git re'
+
+alias nv='nvim'

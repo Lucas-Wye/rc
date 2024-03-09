@@ -48,6 +48,11 @@ vim.keymap.set('n', 'srv', '<C-w>b<C-w>H', opts)
 vim.keymap.set('n', 'ts',      ':tab split<CR>',        opts)
 -- `gt` and `gT` to go through each tab
 
+-- quickfix
+vim.keymap.set('n', '<leader>cn', ':cn<CR>', opts)
+vim.keymap.set('n', '<leader>cp', ':cp<CR>', opts)
+vim.keymap.set('n', '<leader>co', ':copen<CR>', opts)
+
 -----------------
 -- Visual mode --
 -----------------

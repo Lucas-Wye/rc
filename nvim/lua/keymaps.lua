@@ -45,19 +45,8 @@ vim.keymap.set('n', 'srh', '<C-w>b<C-w>K', opts)
 vim.keymap.set('n', 'srv', '<C-w>b<C-w>H', opts)
 
 -- tab
-function cycle_tabs()
-  local current_tab = vim.fn.tabpagenr()
-  local total_tabs = vim.fn.tabpagenr('$')
-
-  if current_tab == total_tabs then
-    vim.cmd('tabfirst')
-  else
-    vim.cmd('tabnext')
-  end
-end
 vim.keymap.set('n', 'ts',      ':tab split<CR>',        opts)
-vim.keymap.set('n', '<Tab>',   ':lua cycle_tabs()<CR>', opts)
-vim.keymap.set('n', '<S-Tab>', ':-tabnext<CR>',         opts)
+-- `gt` and `gT` to go through each tab
 
 -----------------
 -- Visual mode --

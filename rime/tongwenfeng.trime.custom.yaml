@@ -1,6 +1,7 @@
 patch:
   "style/auto_caps": ascii
-  "style/candidate_text_size": 20
+  "style/candidate_text_size": 23
+  "style/candidate_spacing": 6
 
   "liquid_keyboard/keyboards": [math, ascii, cn, history, clipboard, exit]
   "preset_keys/liquid_keyboard_switch": { label: ⌘, send: function, command: liquid_keyboard, option: "常用" }

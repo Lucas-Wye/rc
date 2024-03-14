@@ -59,3 +59,4 @@ if __name__ == "__main__":
         sys_config()
     elif argv == "nvim":
         nvim_config()
+        # mkdir -p ~/.config/nvim/lua/plug

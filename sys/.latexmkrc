@@ -1,7 +1,8 @@
-$out_dir="D:\\tmp";
+$out_dir="texout";
 
 $preview_mode=1;
-$pdf_previewer="$HOME\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe";
+# $pdf_previewer="$HOME\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe";
+$pdf_previewer="zathura";
 $bibtex_use=1.5;# 自动检测根据条件清理 bbl 文件
 $clean_ext='thm bbl hd loe synctex.gz xdv run.xml';
 $makeindex='makeindex -s gind.ist %O -o %D %S';
@@ -24,4 +25,4 @@ $pdflatex="pdflatex -file-line-error -halt-on-error -interaction=nonstopmode -sy
 # ---------------------------------------------------------------
 # lualatex
 # $pdf_mode=4;
-# $lualatex="lualatex -outdir=out";
+# $lualatex="lualatex";

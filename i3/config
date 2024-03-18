@@ -69,12 +69,6 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -192,9 +186,11 @@ bar {
 client.focused          #ffffff #33775f #ffffff #ffffff #ffffff
 client.unfocused        #ffffff #517761 #888888 #ffffff #ffffff
 
-exec_always --no-startup-id feh --bg-scale "/home/lustre/bin/Sierra.jpg"
-exec_always --no-startup-id ibus-daemon -dr
+exec --no-startup-id feh --bg-scale "/home/lustre/bin/Sierra.jpg"
+exec --no-startup-id ibus-daemon -dr
 exec --no-startup-id alacritty
-exec --no-startup-id firefox
+exec --no-startup-id i3-msg 'workspace 2; exec firefox; workspace 1'
+
 bindsym $mod+l exec i3lock
 bindsym Mod1+Tab workspace back_and_forth
+bindsym $mod+F2 exec --no-startup-id flameshot gui -p /home/lustre/Downloads

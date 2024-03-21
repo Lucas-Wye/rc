@@ -1,0 +1,17 @@
+# theme = "everforest_light_hard"
+# theme = "everforest_light_medium"
+theme = "everforest_light_soft"
+
+[editor]
+line-number = "relative"
+mouse = false
+rulers = [80, 120]
+cursorline = true
+cursorcolumn = true
+
+[editor.whitespace.characters]
+space = " "
+nbsp = "⍽"    # Non Breaking SPace
+tab = "→"
+newline = "⏎"
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)

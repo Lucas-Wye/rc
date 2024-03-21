@@ -5,7 +5,7 @@ theme = "everforest_light_soft"
 [editor]
 line-number = "relative"
 mouse = false
-rulers = [80, 120]
+rulers = [97]
 cursorline = true
 cursorcolumn = true
 
@@ -15,3 +15,15 @@ nbsp = "⍽"    # Non Breaking SPace
 tab = "→"
 newline = "⏎"
 tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = [ "mode", "file-name", "spinner", "diagnostics" ]
+right = [ "position", "position-percentage", "total-line-numbers" ]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"

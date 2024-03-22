@@ -3,11 +3,12 @@
 theme = "everforest_light_soft"
 
 [editor]
-line-number = "relative"
 mouse = false
 rulers = [97]
 cursorline = true
 cursorcolumn = true
+bufferline = "multiple"
+line-number = "relative"
 
 [editor.whitespace.characters]
 space = " "
@@ -23,7 +24,13 @@ select = "underline"
 
 [editor.statusline]
 left = [ "mode", "file-name", "spinner", "diagnostics" ]
-right = [ "position", "position-percentage", "total-line-numbers" ]
+right = [ "selections","position", "position-percentage", "total-line-numbers" ]
 mode.normal = "N"
 mode.insert = "I"
 mode.select = "S"
+
+[editor.indent-guides]
+render = true
+character = "|" 
+skip-levels = 1
+

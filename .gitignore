@@ -1,0 +1,4 @@
+config/ibus/bus
+config/ibus/rime/build
+config/ibus/rime/installation.yaml
+config/ibus/rime/luna_pinyin.userdb

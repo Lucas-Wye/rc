@@ -23,9 +23,6 @@ vim.keymap.set('n', '<leader>bd', ':bufdo bd<CR>', opts)
 vim.keymap.set('n', 's', '<nop>', opts)
 
 -- split windows
-vim.keymap.set('n', 'sr', ':vsplit<CR>:n<CR>', opts)
-vim.keymap.set('n', 'sl', ':split<CR>',        opts)
-
 vim.keymap.set('n', 'su', ':set nosplitbelow<CR>:split<CR>:set splitbelow<CR>',  opts)
 vim.keymap.set('n', 'sd', ':set splitbelow<CR>:split<CR>',                       opts)
 vim.keymap.set('n', 'sl', ':set nosplitright<CR>:vsplit<CR>:set splitright<CR>', opts)

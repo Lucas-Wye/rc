@@ -10,6 +10,15 @@ cursorcolumn = true
 bufferline = "multiple"
 line-number = "relative"
 
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "↩ "
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
 [editor.whitespace.characters]
 space = " "
 nbsp = "⍽"    # Non Breaking SPace
@@ -23,7 +32,7 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-left = [ "mode", "file-name", "spinner", "diagnostics" ]
+left = [ "mode", "file-name", "file-modification-indicator", "spinner", "diagnostics" ]
 right = [ "selections","position", "position-percentage", "total-line-numbers" ]
 mode.normal = "N"
 mode.insert = "I"
@@ -34,3 +43,8 @@ render = true
 character = "|" 
 skip-levels = 1
 
+[keys.normal]
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"

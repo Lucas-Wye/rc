@@ -43,8 +43,18 @@ render = true
 character = "|" 
 skip-levels = 1
 
+[editor.file-picker]
+hidden = false
+
 [keys.normal]
-C-h = "jump_view_left"
-C-j = "jump_view_down"
-C-k = "jump_view_up"
-C-l = "jump_view_right"
+space.h = "jump_view_left"
+space.j = "jump_view_down"
+space.k = "jump_view_up"
+space.l = "jump_view_right"
+
+C-h = "select_references_to_symbol_under_cursor"
+C-j = "jumplist_picker"
+C-k = "hover"
+
+space.f = "file_picker_in_current_directory"
+space.F = "file_picker"

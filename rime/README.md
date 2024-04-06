@@ -2,8 +2,7 @@
 - install the app from https://github.com/osfans/trime
 - copy current dir to Android
 
-# Ubuntu
+# Fedora
 ```
-sudo apt install -y ibus-rime librime-data-double-pinyin
+sudo dnf install fcitx-rime
 ```
-

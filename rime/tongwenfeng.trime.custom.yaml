@@ -43,7 +43,7 @@ patch:
     - {click: Keyboard_number, width: 12.5, key_back_color: bgn, key_text_color: tgn}
     - {click: liquid_keyboard_switch, width: 12.5, key_text_size: "18", key_back_color: bgn, key_text_color: tgn}
     - {click: ',', key_back_color: bh4, key_text_color: th4}
-    - {click: space, long_click: "lustrew@foxmail.com", width: 30, key_back_color: bkg, key_text_color: tkg}
+    - {click: space, long_click : "lucas.zw.ye@outlook.com", swipe_down: "lustrew@foxmail.com", width: 30, key_back_color: bkg, key_text_color: tkg}
     - {click: '?', key_back_color: bh4, key_text_color: th4}
     - {click: '.', key_text_size: "18", key_back_color: bh4, key_text_color: th4}
     - {click: Return, composing: Return1, width: 15, key_back_color: benter, key_text_color: tenter}

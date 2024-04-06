@@ -10,9 +10,17 @@ patch:
   # 按 CapsLock 输出大写英文字母
   ascii_composer/good_old_caps_lock: true
   ascii_composer/switch_key:
-    Caps_Lock: clear
-    Control_L: noop
-    Control_R: noop
     Shift_L: commit_code
     Shift_R: inline_ascii
+    Control_L: noop
+    Control_R: noop
+    Caps_Lock: clear
+    Eisu_toggle: noop
+  switcher/hotkeys:
+    - F4
+  key_binder:
+    bindings:
+      __patch:
+        - key_bindings:/paging_with_comma_period
+        - key_bindings:/numbered_mode_switch
 ...

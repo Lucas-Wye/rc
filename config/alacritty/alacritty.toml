@@ -56,3 +56,8 @@ action = "Paste"
 key = "Insert"
 mods = "Control"
 action = "Copy"
+
+# [shell]
+# program = "/bin/bash"
+# args = ["-c", "zellij attach --index 0"]
+

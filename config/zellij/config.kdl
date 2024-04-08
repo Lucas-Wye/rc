@@ -5,23 +5,23 @@ keybinds clear-defaults=true {
         // bind "Alt c" { Copy; }
     }
     locked {
-        bind "Alt 3" { SwitchToMode "Normal"; }
+        bind "Alt 5" { SwitchToMode "Normal"; }
     }
-    resize {
-        bind "Alt 6" { SwitchToMode "Normal"; }
-        bind "h" "Left" { Resize "Increase Left"; }
-        bind "j" "Down" { Resize "Increase Down"; }
-        bind "k" "Up" { Resize "Increase Up"; }
-        bind "l" "Right" { Resize "Increase Right"; }
-        bind "H" { Resize "Decrease Left"; }
-        bind "J" { Resize "Decrease Down"; }
-        bind "K" { Resize "Decrease Up"; }
-        bind "L" { Resize "Decrease Right"; }
-        bind "=" "+" { Resize "Increase"; }
-        bind "-" { Resize "Decrease"; }
-    }
+    // resize {
+    //     bind "Alt 6" { SwitchToMode "Normal"; }
+    //     bind "h" "Left" { Resize "Increase Left"; }
+    //     bind "j" "Down" { Resize "Increase Down"; }
+    //     bind "k" "Up" { Resize "Increase Up"; }
+    //     bind "l" "Right" { Resize "Increase Right"; }
+    //     bind "H" { Resize "Decrease Left"; }
+    //     bind "J" { Resize "Decrease Down"; }
+    //     bind "K" { Resize "Decrease Up"; }
+    //     bind "L" { Resize "Decrease Right"; }
+    //     bind "=" "+" { Resize "Increase"; }
+    //     bind "-" { Resize "Decrease"; }
+    // }
     pane {
-        bind "Alt 4" { SwitchToMode "Normal"; }
+        bind "Alt 6" { SwitchToMode "Normal"; }
         bind "h" "Left" { MoveFocus "Left"; }
         bind "l" "Right" { MoveFocus "Right"; }
         bind "j" "Down" { MoveFocus "Down"; }
@@ -37,17 +37,17 @@ keybinds clear-defaults=true {
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
     }
-    move {
-        bind "Alt 7" { SwitchToMode "Normal"; }
-        bind "n" "Tab" { MovePane; }
-        bind "p" { MovePaneBackwards; }
-        bind "h" "Left" { MovePane "Left"; }
-        bind "j" "Down" { MovePane "Down"; }
-        bind "k" "Up" { MovePane "Up"; }
-        bind "l" "Right" { MovePane "Right"; }
-    }
+    // move {
+    //     bind "Alt 7" { SwitchToMode "Normal"; }
+    //     bind "n" "Tab" { MovePane; }
+    //     bind "p" { MovePaneBackwards; }
+    //     bind "h" "Left" { MovePane "Left"; }
+    //     bind "j" "Down" { MovePane "Down"; }
+    //     bind "k" "Up" { MovePane "Up"; }
+    //     bind "l" "Right" { MovePane "Right"; }
+    // }
     tab {
-        bind "Alt 5" { SwitchToMode "Normal"; }
+        bind "Alt 7" { SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "h" "Left" "Up" "k" { GoToPreviousTab; }
         bind "l" "Right" "Down" "j" { GoToNextTab; }
@@ -122,7 +122,7 @@ keybinds clear-defaults=true {
         }
     }
     shared_except "locked" {
-        bind "Alt 3" { SwitchToMode "Locked"; }
+        bind "Alt 5" { SwitchToMode "Locked"; }
         bind "Alt 0" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt 1" "Alt Left" { MoveFocusOrTab "Left"; }
@@ -138,11 +138,11 @@ keybinds clear-defaults=true {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
     }
     shared_except "pane" "locked" {
-        bind "Alt 4" { SwitchToMode "Pane"; }
+        bind "Alt 6" { SwitchToMode "Pane"; }
     }
-    shared_except "resize" "locked" {
-        bind "Alt 6" { SwitchToMode "Resize"; }
-    }
+    // shared_except "resize" "locked" {
+        // bind "Alt 6" { SwitchToMode "Resize"; }
+    // }
     shared_except "scroll" "locked" {
         bind "Alt 8" { SwitchToMode "Scroll"; }
     }
@@ -150,11 +150,11 @@ keybinds clear-defaults=true {
         bind "Alt 9" { SwitchToMode "Session"; }
     }
     shared_except "tab" "locked" {
-        bind "Alt 5" { SwitchToMode "Tab"; }
+        bind "Alt 7" { SwitchToMode "Tab"; }
     }
-    shared_except "move" "locked" {
-        bind "Alt 7" { SwitchToMode "Move"; }
-    }
+    // shared_except "move" "locked" {
+    //     bind "Alt 7" { SwitchToMode "Move"; }
+    // }
 }
 
 plugins {

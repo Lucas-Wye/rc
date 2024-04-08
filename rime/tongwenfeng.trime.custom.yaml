@@ -3,7 +3,7 @@ patch:
   "style/candidate_text_size": 23
   "style/candidate_spacing": 6
 
-  "liquid_keyboard/keyboards": [math, ascii, cn, history, clipboard, exit]
+  "liquid_keyboard/keyboards": [exit, clipboard, history, ascii, cn]
   "preset_keys/liquid_keyboard_switch": { label: ⌘, send: function, command: liquid_keyboard, option: "常用" }
 
   "preset_keyboards/default/keys":
@@ -38,15 +38,15 @@ patch:
     - {click: b, key_back_color: bh3, key_text_color: th3}
     - {click: n, key_back_color: bh3, key_text_color: th3}
     - {click: m, key_back_color: bh3, key_text_color: th3}
-    - {click: Shift_L, composing: delimiter, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
+    - {label: mail, click: "lucas.zw.ye@outlook.com", width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
 
-    - {click: Keyboard_number, width: 12.5, key_back_color: bgn, key_text_color: tgn}
-    - {click: liquid_keyboard_switch, width: 12.5, key_text_size: "18", key_back_color: bgn, key_text_color: tgn}
+    - {click: Keyboard_number, width: 11, key_back_color: bgn, key_text_color: tgn}
     - {click: ',', key_back_color: bh4, key_text_color: th4}
-    - {click: space, swipe_up: "lucas.zw.ye@gmail.com", swipe_down: "lucas.zw.ye@outlook.com", long_click: "lustrew@foxmail.com", width: 30, key_back_color: bkg, key_text_color: tkg}
+    - {click: Return, composing: Return1, width: 13, key_back_color: benter, key_text_color: tenter}
+    - {click: liquid_keyboard_switch, width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
+    - {click: Shift_L, composing: delimiter, width: 13, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
     - {click: '?', key_back_color: bh4, key_text_color: th4}
-    - {click: '.', key_text_size: "18", key_back_color: bh4, key_text_color: th4}
-    - {click: Return, composing: Return1, width: 15, key_back_color: benter, key_text_color: tenter}
+    - {click: space, swipe_up: "lucas.zw.ye@gmail.com", swipe_down: "lustrew@foxmail.com", width: 30, key_back_color: bkg, key_text_color: tkg}
 
   "preset_keyboards/number/keys":
     - {click: 1}
@@ -71,9 +71,8 @@ patch:
     - {click: ';', key_back_color: bgn, key_text_color: tgn}
 
     - {click: Keyboard_default, key_back_color: bgn, key_text_color: 'tgn'}
-    - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
     - {click: 0}
-    - {click: '@', key_back_color: bgn, key_text_color: tgn}
-    - {click: space1, key_back_color: bgn, key_text_color: tgn}
+    - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
     - {click: Return, key_back_color: benter, key_text_color: tenter}
-
+    - {click: space1, key_back_color: bgn, key_text_color: tgn}
+    - {click: '@', key_back_color: bgn, key_text_color: tgn}

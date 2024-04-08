@@ -170,7 +170,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         position top
-        status_command i3status --config /home/lustre/.config/i3/i3status.conf
+        status_command i3status --config /$HOME/.config/i3/i3status.conf
         separator_symbol " "
         colors {
             background #fdf6e3
@@ -187,12 +187,13 @@ client.focused          #ffffff #33775f #ffffff #ffffff #ffffff
 client.unfocused        #ffffff #517761 #888888 #ffffff #ffffff
 for_window [class=".*"] border pixel 1
 
-exec --no-startup-id feh --bg-scale "/home/lustre/bin/Sierra.jpg"
+exec --no-startup-id feh --bg-scale "$HOME/bin/Sierra.jpg"
 exec --no-startup-id fcitx5
 exec --no-startup-id alacritty
 exec --no-startup-id i3-msg 'workspace 2; exec firefox; workspace 1'
-exec --no-startup-id /home/lustre/.net.sh
+exec --no-startup-id flatpak run com.tencent.WeChat
+exec --no-startup-id /$HOME/.net.sh
 
 bindsym $mod+l exec i3lock
 bindsym Mod1+Tab workspace back_and_forth
-bindsym Print exec --no-startup-id flameshot gui -p /home/lustre/Downloads
+bindsym Print exec --no-startup-id flameshot gui -p /$HOME/Downloads

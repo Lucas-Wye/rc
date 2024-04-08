@@ -21,6 +21,7 @@ patch:
   key_binder:
     bindings:
       __patch:
-        - key_bindings:/paging_with_comma_period
         - key_bindings:/numbered_mode_switch
+        - key_bindings:/paging_with_minus_equal
+        - key_bindings:/paging_with_comma_period
 ...

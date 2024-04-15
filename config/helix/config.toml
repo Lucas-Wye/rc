@@ -15,13 +15,13 @@ enable = true
 wrap-indicator = "↩ "
 
 [editor.whitespace.render]
-space = "all"
-tab = "all"
+# space = "all"
+# tab = "all"
 newline = "none"
 
 [editor.whitespace.characters]
-space = " "
-nbsp = "⍽"    # Non Breaking SPace
+# space = " "
+nbsp = "⍽"    # Non Breaking Space
 tab = "→"
 newline = "⏎"
 tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
@@ -41,7 +41,7 @@ mode.select = "S"
 [editor.indent-guides]
 render = true
 character = "|" 
-skip-levels = 1
+skip-levels = 2
 
 [editor.file-picker]
 hidden = false

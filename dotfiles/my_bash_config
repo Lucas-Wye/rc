@@ -21,4 +21,3 @@ alias gpl='git pl'
 alias gps='git ps'
 alias gre='git re'
 
-alias nv='nvim'

@@ -50,17 +50,9 @@ vim.keymap.set('n', '<leader>cn', ':cn<CR>', opts)
 vim.keymap.set('n', '<leader>cp', ':cp<CR>', opts)
 vim.keymap.set('n', '<leader>co', ':copen<CR>', opts)
 
--- goto
-vim.keymap.set('n', 'ge', 'G', opts)
-vim.keymap.set('n', 'gh', '0', opts)
-vim.keymap.set('n', 'gl', '$', opts)
-
 -----------------
 -- Visual mode --
 -----------------
--- 配置<, >来缩进
-vim.keymap.set('v', '<', '<gv', opts)
-vim.keymap.set('v', '>', '>gv', opts)
 -- 搜索选中的内容
 vim.keymap.set('v', '@', 'y/<c-r>"<cr>', opts)
 

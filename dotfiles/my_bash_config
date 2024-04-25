@@ -21,3 +21,12 @@ alias gpl='git pl'
 alias gps='git ps'
 alias gre='git re'
 
+if ! command -v hx &> /dev/null; then
+    if command -v nvim &> /dev/null; then
+        alias hx='nvim'
+    elif command -v vim &> /dev/null; then
+        alias hx='vim'
+    else
+        alias hx='vi'
+    fi
+fi

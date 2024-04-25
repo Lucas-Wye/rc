@@ -54,6 +54,10 @@ G = "goto_file_end"
 "%" = "match_brackets"
 esc = ["collapse_selection", "keep_primary_selection"]
 
+# Make j and k behave as they do Vim when soft-wrap is enabled
+j = "move_line_down"
+k = "move_line_up"
+
 space.h = "jump_view_left"
 space.j = "jump_view_down"
 space.k = "jump_view_up"

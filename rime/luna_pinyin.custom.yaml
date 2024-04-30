@@ -10,5 +10,5 @@ patch:
       - pinyin:/key_correction
 
   # 添加朙月拼音扩充词库
-  translator/dictionary: luna_pinyin.extended     
+  translator/dictionary: luna_pinyin.extended
 ...

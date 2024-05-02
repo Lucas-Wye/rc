@@ -45,7 +45,7 @@ patch:
     - {click: ',', key_back_color: bh4, key_text_color: th4}
     - {click: Shift_L, composing: delimiter, width: 13, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
     - {click: Return, composing: Return1, width: 13, key_back_color: benter, key_text_color: tenter}
-    - {click: space, swipe_up: "lucas.zw.ye@.com", swipe_down: "lustrew@foxmail.com", width: 30, key_back_color: bkg, key_text_color: tkg}
+    - {click: space, width: 30, key_back_color: bkg, key_text_color: tkg}
     - {click: '?', key_back_color: bh4, key_text_color: th4}
     - {click: Menu, long_click: liquid_keyboard_switch, width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
 
@@ -83,13 +83,13 @@ patch:
     - {click: m, key_back_color: bh3, key_text_color: th3}
     - {click: Keyboard_default, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
 
-    - {click: Keyboard_number, width: 11, key_back_color: bgn, key_text_color: tgn}
+    - {click: Keyboard_default, width: 11, key_back_color: bgn, key_text_color: tgn}
     - {click: ',', key_back_color: bh4, key_text_color: th4}
     - {click: Shift_L, composing: delimiter, width: 13, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
     - {click: Return, composing: Return1, width: 13, key_back_color: benter, key_text_color: tenter}
-    - {click: space, swipe_up: "lucas.zw.ye@.com", swipe_down: "lustrew@foxmail.com", width: 30, key_back_color: bkg, key_text_color: tkg}
-    - {click: '?', key_back_color: bh4, key_text_color: th4}
-    - {click: Menu, long_click: liquid_keyboard_switch, width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
+    - {click: space, width: 30, key_back_color: bkg, key_text_color: tkg}
+    - {click: '.', key_back_color: bh4, key_text_color: th4}
+    - {click: '?', width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
 
   "preset_keyboards/number/keys":
     - {click: 1}
@@ -146,6 +146,6 @@ patch:
 
       - {click: Keyboard_number, long_click: liquid_keyboard_switch, width: 17}
       - {click: Return, composing: Return1, width: 13, key_back_color: benter, key_text_color: tenter, swipe_up: Up, swipe_down: Down}
-      - {click: space, key_back_color: Skyblue, width: 40, long_click: Settings, swipe_up: "lucas.zw.ye@.com", swipe_down: "lustrew@foxmail.com"}
+      - {click: space, key_back_color: Skyblue, width: 40, long_click: Settings}
       - {click: "0", long_click: "(){Left}", width: 13, swipe_left: "(", swipe_right: ")", swipe_up: Up, swipe_down: Down}
       - {click: Menu, long_click: Theme_settings, width: 17, swipe_up: Up, swipe_down: Down}

@@ -54,6 +54,15 @@ G = "goto_file_end"
 "%" = "match_brackets"
 esc = ["collapse_selection", "keep_primary_selection"]
 
+"i" = [":sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false; fi", "insert_mode"]
+"a" = [":sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false; fi", "append_mode"]
+"c" = [":sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false; fi", "change_selection"]
+"o" = [":sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false; fi", "open_below"]
+"I" = [":sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false; fi", "insert_at_line_start"]
+"A" = [":sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false; fi", "insert_at_line_end"]
+"O" = [":sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false; fi", "open_above"]
+
+
 # Make j and k behave as they do Vim when soft-wrap is enabled
 j = "move_line_down"
 k = "move_line_up"
@@ -71,7 +80,8 @@ space.f = "file_picker_in_current_directory"
 space.F = "file_picker"
 
 [keys.insert]
-esc = ["collapse_selection", "normal_mode"]
+# esc = ["collapse_selection", "normal_mode"]
+"esc" = [":sh echo $(busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 IsAsciiMode) > /tmp/rime-state; busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b true", "collapse_selection", "normal_mode"]
 
 [keys.select]
 0 = "goto_line_start"
@@ -80,3 +90,4 @@ esc = ["collapse_selection", "normal_mode"]
 G = "goto_file_end"
 "%" = "match_brackets"
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
+

@@ -20,13 +20,13 @@ patch:
     - {click: '”'}
     - {click: '···'}
 
-    - {click: 'lucas.zw.ye@outlook.com{Return}', width: 60, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
+    - {click: 'lucas.zw.ye@outlook.com', width: 60, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
     - {click: '‘'}
     - {click: '’'}
     - {click: '《》{Left}'}
     - {click: '（）{Left}'}
 
-    - {click: 'lustrew@foxmail.com{Return}', width: 50, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
+    - {click: 'lustrew@foxmail.com', width: 50, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
     - {click: ','}
     - {click: '.'}
     - {click: '?'}
@@ -59,7 +59,7 @@ patch:
     - {click: BackSpace, width: 17, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
     - {click: space, width: 33}
     - {label: '颜文', click: Keyboard_bqsy4, width: 16.5, key_text_size: "14", key_back_color: bgn, key_text_color: tgn}
-    - {label: 'Phone', click: "15557167236{Return}", width: 16.5}
+    - {label: 'Phone', click: "15557167236", width: 16.5}
 
   "preset_keyboards/default/keys":
     - {click: q, key_back_color: bh1, key_text_color: th1}
@@ -103,6 +103,7 @@ patch:
     - {click: '?', key_back_color: bh4, key_text_color: th4}
     - {click: Menu, long_click: Theme_settings, width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
 
+  "preset_keyboards/letter/ascii_mode": 1
   "preset_keyboards/letter/keys":
     - {click: q, key_back_color: bh1, key_text_color: th1}
     - {click: w, key_back_color: bh1, key_text_color: th1}
@@ -203,3 +204,41 @@ patch:
       - {click: space, key_back_color: Skyblue, width: 40, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: Up, swipe_down: Down}
       - {click: "0", width: 13}
       - {click: Menu, long_click: Theme_settings, width: 17}
+
+  "preset_keyboards/luna_pinyin_double_key":
+    ascii_mode: 0
+    author: "Lustre"
+    name: "双键双拼"
+    ascii_mode: 0
+    width: 14
+    keys:
+      - {label: "q",   click: q, long_click: 1, width: 15}
+      - {label: "we", click: w, long_click: 2}
+      - {label: "rt", click: r, long_click: 3}
+      - {label: "y",   click: y, long_click: 4}
+      - {label: "u",   click: u, long_click: 5}
+      - {label: "io", click: i, long_click: 6}
+      - {label: "p",   click: p, long_click: 7, width: 15}
+
+      - {label: "a",   click: a, long_click: 8}
+      - {label: "sd", click: s, long_click: 9}
+      - {label: "fg", click: f, long_click: 0}
+      - {label: "h",   click: h, long_click: ":"}
+      - {label: "jk", click: j, long_click: ";"}
+      - {label: "l"  , click: l, long_click: "?"}
+      - {click: Keyboard_defaulten, composing: Down, long_click: '"', width: 16}
+
+      - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
+      - {label: "z"  , click: z, long_click: "@"}
+      - {label: "xc", click: x, long_click: "!"}
+      - {label: "v",   click: v, long_click: "?"}
+      - {label: "bn", click: b, long_click: "?"}
+      - {label: "m",   click: m, long_click: "."}
+      - {click: ":", long_click: ";", width: 8}
+      - {click: "?", long_click: "!", width: 8}
+
+      - {click: liquid_keyboard_switch, width: 10, key_back_color: benter, key_text_color: tenter}
+      - {click: Return, composing: Return1, width: 15}
+      - {click: space, key_back_color: Skyblue, width: 50, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: Up, swipe_down: Down}
+      - {click: ",", long_click: ".", width: 15}
+      - {click: Menu, long_click: Theme_settings, width: 10}

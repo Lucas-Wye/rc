@@ -1,5 +1,5 @@
 patch:
-  "translator/dictionary": luna_pinyin
+  "translator/dictionary": custom
   # 输入双拼码的时候不转化为全拼码
   'translator/preedit_format': {}
 

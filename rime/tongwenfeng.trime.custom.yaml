@@ -2,12 +2,15 @@ patch:
   "style/auto_caps": ascii
   "style/candidate_text_size": 23
   "style/candidate_spacing": 6
+  "style/keyboards": [.default, default, number, bqfh1, left_hand_keyboard]
 
   # "liquid_keyboard/keyboards": [exit, clipboard, history, ascii, cn]
   # "preset_keys/liquid_keyboard_switch": { label: ⌘, send: function, command: liquid_keyboard, option: "常用" }
   "preset_keys/liquid_keyboard_switch": { label: ⌘, functional: false, send: Eisu_toggle, select: bqfh1 }
+  "preset_keys/left_kb_sw": { label: "LEFT", functional: false, send: Eisu_toggle, select: left_hand_keyboard }
 
   "preset_keyboards/bqfh1/width": 10
+  "preset_keyboards/bqfh1/ascii_mode": 1
   "preset_keyboards/bqfh1/keys":
     - {click: '，', height: 26}
     - {click: '。'}
@@ -20,26 +23,27 @@ patch:
     - {click: '”'}
     - {click: '···'}
 
-    - {click: 'lucas.zw.ye@outlook.com', width: 60, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
     - {click: '‘'}
     - {click: '’'}
+    - {click: '￥'}
     - {click: '《》{Left}'}
     - {click: '（）{Left}'}
-
     - {click: 'lustrew@foxmail.com', width: 50, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
+
     - {click: ','}
     - {click: '.'}
-    - {click: '?'}
     - {click: '!'}
-    - {click: '……'}
-
+    - {click: '?'}
     - {click: ';'}
+    - {click: 'lucas.zw.ye@outlook.com', width: 50, key_text_size: "14", key_back_color: benter, key_text_color: tenter}
+
     - {click: '\\'}
     - {click: '|'}
     - {click: '*'}
     - {click: '+'}
     - {click: '-'}
-    - {click: '*'}
+    - {click: '<'}
+    - {click: '>'}
     - {click: '/'}
     - {click: '='}
     - {click: '^'}
@@ -93,72 +97,29 @@ patch:
     - {click: b, key_back_color: bh3, key_text_color: th3}
     - {click: n, key_back_color: bh3, key_text_color: th3}
     - {click: m, key_back_color: bh3, key_text_color: th3}
-    - {click: Keyboard_default, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
+    - {click: liquid_keyboard_switch, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
 
-    - {click: Keyboard_number, long_click: liquid_keyboard_switch, width: 11, key_back_color: bgn, key_text_color: tgn}
+    - {click: Keyboard_number, width: 11, key_back_color: bgn, key_text_color: tgn}
     - {click: ',', key_back_color: bh4, key_text_color: th4}
     - {click: Shift_L, composing: delimiter, width: 13, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
     - {click: Return, composing: Return1, width: 13, key_back_color: benter, key_text_color: tenter}
     - {click: space, width: 30, key_back_color: bkg, key_text_color: tkg}
     - {click: '?', key_back_color: bh4, key_text_color: th4}
-    - {click: Menu, long_click: Theme_settings, width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
-
-  "preset_keyboards/letter/ascii_mode": 1
-  "preset_keyboards/letter/keys":
-    - {click: q, key_back_color: bh1, key_text_color: th1}
-    - {click: w, key_back_color: bh1, key_text_color: th1}
-    - {click: e, key_back_color: bh1, key_text_color: th1}
-    - {click: r, key_back_color: bh1, key_text_color: th1}
-    - {click: t, key_back_color: bh1, key_text_color: th1}
-    - {click: y, key_back_color: bh1, key_text_color: th1}
-    - {click: u, key_back_color: bh1, key_text_color: th1}
-    - {click: i, key_back_color: bh1, key_text_color: th1}
-    - {click: o, key_back_color: bh1, key_text_color: th1}
-    - {click: p, key_back_color: bh1, key_text_color: th1}
-
-    - {width: 5, key_back_color: bh2, key_text_color: th2}
-    - {click: a, long_click: select_all, key_back_color: bh2, key_text_color: th2}
-    - {click: s, key_back_color: bh2, key_text_color: th2}
-    - {click: d, key_back_color: bh2, key_text_color: th2}
-    - {click: f, key_back_color: bh2, key_text_color: th2}
-    - {click: g, key_back_color: bh2, key_text_color: th2}
-    - {click: h, key_back_color: bh2, key_text_color: th2}
-    - {click: j, key_back_color: bh2, key_text_color: th2}
-    - {click: k, key_back_color: bh2, key_text_color: th2}
-    - {click: l, key_back_color: bh2, key_text_color: th2}
-    - {width: 5, key_back_color: bh2, key_text_color: th2}
-
-    - {click: BackSpace, width: 15, key_back_color: bbs, key_text_color: tbs}
-    - {click: z, key_back_color: bh3, key_text_color: th3}
-    - {click: x, long_click: cut, key_back_color: bh3, key_text_color: th3}
-    - {click: c, long_click: copy, key_back_color: bh3, key_text_color: th3}
-    - {click: v, long_click: paste_clip, key_back_color: bh3, key_text_color: th3}
-    - {click: b, key_back_color: bh3, key_text_color: th3}
-    - {click: n, key_back_color: bh3, key_text_color: th3}
-    - {click: m, key_back_color: bh3, key_text_color: th3}
-    - {click: Keyboard_default, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
-
-    - {click: Delete, width: 11, key_back_color: bgn, key_text_color: tgn}
-    - {click: ',', key_back_color: bh4, key_text_color: th4}
-    - {click: Shift_L, composing: delimiter, width: 13, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
-    - {click: Return, composing: Return1, width: 13, key_back_color: benter, key_text_color: tenter}
-    - {click: space, width: 30, key_back_color: bkg, key_text_color: tkg}
-    - {click: '.', key_back_color: bh4, key_text_color: th4}
-    - {click: '?', width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
+    - {click: Menu, long_click: left_kb_sw, width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
 
   "preset_keyboards/number/keys":
     - {click: 1}
     - {click: 2}
     - {click: 3}
-    - {click: '+', long_click: '#', key_back_color: bgn, key_text_color: tgn}
     - {click: '/', key_back_color: bgn, key_text_color: tgn}
-    - {click: '=', long_click: '≠', key_back_color: bgn, key_text_color: tgn}
+    - {click: '@', key_back_color: bgn, key_text_color: tgn}
+    - {click: '#', key_back_color: bgn, key_text_color: tgn}
 
     - {click: 4}
     - {click: 5}
     - {click: 6}
-    - {click: '-', long_click: '%', key_back_color: bgn, key_text_color: tgn}
-    - {click: '_', key_back_color: bgn, key_text_color: tgn}
+    - {click: '-', key_back_color: bgn, key_text_color: tgn}
+    - {click: '!', key_back_color: bgn, key_text_color: tgn}
     - {click: '(){Left}', key_back_color: bgn, key_text_color: tgn}
 
     - {click: 7}
@@ -173,72 +134,53 @@ patch:
     - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
     - {click: Return, key_back_color: benter, key_text_color: tenter}
     - {click: space1, key_back_color: bgn, key_text_color: tgn}
-    - {click: '@', key_back_color: bgn, key_text_color: tgn}
+    - {click: '%', key_back_color: bgn, key_text_color: tgn}
 
-  "preset_keyboards/luna_pinyin_jiugong":
-    ascii_mode: 0
+  "preset_keyboards/left_hand_keyboard":
     author: "Lustre"
-    name: 九宮键盘
-    width: 22
+    name: "左手模式"
+    width: 8.5
     keys:
-      - {click: ",", long_click: ".", key_back_color: keyboard_back_color, key_text_color: text_color, width: 17, composing: Up}
-      - {click: 1, label: "'", composing: "'"}
-      - {click: 2, label: abc, long_click: select_all}
-      - {click: 3, label: def, long_click: "#"}
-      - {click: ":", long_click: ";", width: 17}
+      - {click: q, key_back_color: bh1, key_text_color: th1}
+      - {click: w, key_back_color: bh1, key_text_color: th1}
+      - {click: e, key_back_color: bh1, key_text_color: th1}
+      - {click: r, key_back_color: bh1, key_text_color: th1}
+      - {click: t, key_back_color: bh1, key_text_color: th1}
+      - {click: y, key_back_color: bh1, key_text_color: th1}
+      - {click: u, key_back_color: bh1, key_text_color: th1}
+      - {click: i, key_back_color: bh1, key_text_color: th1}
+      - {click: o, key_back_color: bh1, key_text_color: th1}
+      - {click: p, key_back_color: bh1, key_text_color: th1}
+      - {width: 15, key_back_color: bh2, key_text_color: th2}
 
-      - {click: "?", long_click: "!", key_back_color: keyboard_back_color, key_text_color: text_color, width: 17, composing: Down}
-      - {click: 4, label: ghi, long_click: Home}
-      - {click: 5, label: jkl, long_click: "/"}
-      - {click: 6, label: mno, long_click: End}
-      - {click: "@", long_click: "*", composing: Up, width: 17}
+      - {width: 4.25, key_back_color: bh2, key_text_color: th2}
+      - {click: a, long_click: select_all, key_back_color: bh2, key_text_color: th2}
+      - {click: s, key_back_color: bh2, key_text_color: th2}
+      - {click: d, key_back_color: bh2, key_text_color: th2}
+      - {click: f, key_back_color: bh2, key_text_color: th2}
+      - {click: g, key_back_color: bh2, key_text_color: th2}
+      - {click: h, key_back_color: bh2, key_text_color: th2}
+      - {click: j, key_back_color: bh2, key_text_color: th2}
+      - {click: k, key_back_color: bh2, key_text_color: th2}
+      - {click: l, key_back_color: bh2, key_text_color: th2}
+      - {width: 19.25, key_back_color: bh2, key_text_color: th2}
 
-      - {click: BackSpace, key_back_color: bbs, key_text_color: tbs, width: 17}
-      - {click: 7, label: pqrs, long_click: copy}
-      - {click: 8, label: tuv, long_click: paste}
-      - {click: 9, label: wxyz, long_click: cut}
-      - {click: Keyboard_defaulten, composing: Down, long_click: '"', width: 17}
+      - {click: BackSpace, width: 9, key_back_color: bbs, key_text_color: tbs}
+      - {click: z, key_back_color: bh3, key_text_color: th3}
+      - {click: x, long_click: cut, key_back_color: bh3, key_text_color: th3}
+      - {click: c, long_click: copy, key_back_color: bh3, key_text_color: th3}
+      - {click: v, long_click: paste_clip, key_back_color: bh3, key_text_color: th3}
+      - {click: b, key_back_color: bh3, key_text_color: th3}
+      - {click: n, key_back_color: bh3, key_text_color: th3}
+      - {click: m, key_back_color: bh3, key_text_color: th3}
+      - {click: liquid_keyboard_switch, width: 9, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
+      - {width: 22.5, key_back_color: bh2, key_text_color: th2}
 
-      - {click: Return, composing: Return1, width: 17}
-      - {click: liquid_keyboard_switch, width: 13, key_back_color: benter, key_text_color: tenter}
-      - {click: space, key_back_color: Skyblue, width: 40, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: Up, swipe_down: Down}
-      - {click: "0", width: 13}
-      - {click: Menu, long_click: Theme_settings, width: 17}
+      - {click: Keyboard_number, width: 11, key_back_color: bgn, key_text_color: tgn}
+      - {click: ',', key_back_color: bh4, key_text_color: th4}
+      - {click: Shift_L, composing: delimiter, width: 13, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
+      - {click: Return, composing: Return1, width: 13, key_back_color: benter, key_text_color: tenter}
+      - {click: space, width: 30, key_back_color: bkg, key_text_color: tkg}
+      - {click: '?', key_back_color: bh4, key_text_color: th4}
+      - {click: Menu, long_click: Keyboard_default, width: 13, key_text_size: "20", key_back_color: bgn, key_text_color: tgn}
 
-  "preset_keyboards/luna_pinyin_double_key":
-    ascii_mode: 0
-    author: "Lustre"
-    name: "双键双拼"
-    ascii_mode: 0
-    width: 14
-    keys:
-      - {label: "q",   click: q, long_click: 1, width: 15}
-      - {label: "we", click: w, long_click: 2}
-      - {label: "rt", click: r, long_click: 3}
-      - {label: "y",   click: y, long_click: 4}
-      - {label: "u",   click: u, long_click: 5}
-      - {label: "io", click: i, long_click: 6}
-      - {label: "p",   click: p, long_click: 7, width: 15}
-
-      - {label: "a",   click: a, long_click: 8}
-      - {label: "sd", click: s, long_click: 9}
-      - {label: "fg", click: f, long_click: 0}
-      - {label: "h",   click: h, long_click: ":"}
-      - {label: "jk", click: j, long_click: ";"}
-      - {label: "l"  , click: l, long_click: "?"}
-      - {click: Keyboard_defaulten, composing: Down, long_click: '"', width: 16}
-
-      - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
-      - {label: "z"  , click: z, long_click: "@"}
-      - {label: "xc", click: x, long_click: "!"}
-      - {label: "v",   click: v, long_click: "?"}
-      - {label: "bn", click: b, long_click: "?"}
-      - {label: "m",   click: m, long_click: "."}
-      - {click: ":", long_click: ";", width: 8}
-      - {click: "?", long_click: "!", width: 8}
-
-      - {click: liquid_keyboard_switch, width: 10, key_back_color: benter, key_text_color: tenter}
-      - {click: Return, composing: Return1, width: 15}
-      - {click: space, key_back_color: Skyblue, width: 50, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: Up, swipe_down: Down}
-      - {click: ",", long_click: ".", width: 15}
-      - {click: Menu, long_click: Theme_settings, width: 10}

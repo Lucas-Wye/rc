@@ -1,6 +1,7 @@
 patch:
   schema_list:
     - schema: double_pinyin_flypy
+    - schema: double_pinyin_flypy_left
     - schema: easy_en
   # 候选词个数
   menu/page_size: 7

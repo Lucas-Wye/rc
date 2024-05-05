@@ -17,6 +17,7 @@ patch:
     Caps_Lock: clear
     Eisu_toggle: noop
   switcher/hotkeys:
+    - Control+grave
     - F4
   key_binder:
     bindings:

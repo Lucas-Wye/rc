@@ -1,7 +1,8 @@
 PAPER = papername
 TEX = $(wildcard *.tex)
 BIB = references.bib
-FIGS = $(wildcard figs/*.pdf)
+FIGS = $(wildcard fig/*.pdf)
+ALGOS = $(wildcard algo/*.tex)
 OUT = out
 PAPER_PDF = $(OUT)/$(PAPER).pdf
 PAPER_XDV = $(OUT)/$(PAPER).xdv
@@ -30,7 +31,7 @@ BIBER_CMD=biber $(PAPER_BCF)
 
 all: $(PAPER_PDF)
 
-$(PAPER_PDF): $(TEX) $(BIB) $(FIGS)
+$(PAPER_PDF): $(TEX) $(BIB) $(FIGS) $(ALGOS)
 	mkdir -p $(OUT)
 	# xelatex
 	# $(XELATEX_CMD)

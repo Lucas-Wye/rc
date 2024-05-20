@@ -17,7 +17,7 @@
 	logl = log --oneline
 	unstage = reset HEAD --
 [core]
-	editor = 'vim'
+	editor = 'vi'
 [pull]
 	rebase = false
 [push]

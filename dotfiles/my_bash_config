@@ -14,13 +14,6 @@ alias cd1='cd ..'
 alias cd2='cd ../..'
 alias rl='realpath'
 
-alias gst='git st'
-alias glo='git log'
-alias gco='git co'
-alias gpl='git pl'
-alias gps='git ps'
-alias gre='git re'
-
 if ! command -v hx &> /dev/null; then
     if command -v nvim &> /dev/null; then
         alias hx='nvim'
@@ -30,3 +23,6 @@ if ! command -v hx &> /dev/null; then
         alias hx='vi'
     fi
 fi
+
+############################################
+# sudo mount -t ntfs-3g /dev/nvme0n1p3 /mnt/c

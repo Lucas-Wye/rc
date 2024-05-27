@@ -41,5 +41,9 @@ language-servers = [ "scls" ]
 name = "make"
 language-servers = [ "scls" ]
 
+[[language]]
+name = "scala"
+language-servers = [ "scls", "metals"]
+
 # introduce a new language to enable completion on any doc by forcing set language with :set-language stub
 

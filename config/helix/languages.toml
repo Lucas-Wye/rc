@@ -1,4 +1,6 @@
-# introduce new language server
+################################################
+######### scls
+################################################
 [language-server.scls]
 command = "simple-completion-language-server"
 
@@ -10,13 +12,33 @@ feature_snippets = true       # enable snippets
 feature_unicode_input = true  # enable "unicode input"
 feature_paths = true          # enable path completion
 
-
 # write logs to /tmp/completion.log
 [language-server.scls.environment]
 RUST_LOG = "info,simple-completion-langauge-server=info"
 LOG_FILE = "/tmp/completion.log"
 
+################################################
+######### texlab
+################################################
+# [language-server.texlab]
+# auxDirectory = "out"
+
+# [language-server.texlab.build]
+# onSave = true
+# executable = "latexmk"
+# args = [ "%f" ]
+
+# [language-server.texlab.chktex]
+# onOpenAndSave = true
+# onEdit = true
+
+# [language-server.texlab.forwardSearch]
+# executable = "zathura"
+# args = [ "--synctex-forward", "%l:%c:%f", "%p" ]
+
+################################################
 # append langage server to existed languages
+################################################
 [[language]]
 name = "rust"
 language-servers = [ "scls", "rust-analyzer" ]
@@ -45,5 +67,8 @@ language-servers = [ "scls" ]
 name = "scala"
 language-servers = [ "scls", "metals"]
 
-# introduce a new language to enable completion on any doc by forcing set language with :set-language stub
+[[language]]
+name = "latex"
+# language-servers = [ "scls", "texlab" ]
+language-servers = [ "texlab" ]
 

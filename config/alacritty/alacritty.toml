@@ -2,7 +2,7 @@ live_config_reload = true
 [window]
 padding = { x = 7, y = 7}
 dimensions = { columns = 150, lines = 30}
-opacity = 0.95
+opacity = 1.0
 
 [env]
 TERM = 'xterm-256color'
@@ -35,7 +35,7 @@ cyan    = '#35a77c'
 white   = '#e0dcc7'
 
 [font]
-size = 13
+size = 12
 
 [font.normal]
 family = 'JetBrainsMono Nerd Font'
@@ -56,8 +56,3 @@ action = "Paste"
 key = "Insert"
 mods = "Control"
 action = "Copy"
-
-# [shell]
-# program = "/bin/bash"
-# args = ["-c", "zellij attach --index 0"]
-

@@ -15,22 +15,24 @@ feature_paths = true          # enable path completion
 # write logs to /tmp/completion.log
 [language-server.scls.environment]
 RUST_LOG = "info,simple-completion-langauge-server=info"
-LOG_FILE = "/tmp/completion.log"
+LOG_FILE = "~/tmp/completion.log"
 
 ################################################
 ######### texlab
 ################################################
-# [language-server.texlab]
-# auxDirectory = "out"
+[language-server.texlab]
+# command = "texlab"
+auxDirectory = "out"
 
-# [language-server.texlab.build]
-# onSave = true
-# executable = "latexmk"
-# args = [ "%f" ]
+[language-server.texlab.config.texlab.build]
+onSave = true
+executable = "latexmk"
+args = [ "%f" ]
+# forwardSearchAfter = true
 
-# [language-server.texlab.chktex]
-# onOpenAndSave = true
-# onEdit = true
+[language-server.texlab.config.texlab.chktex]
+onEdit = true
+onOpenAndSave = true
 
 # [language-server.texlab.forwardSearch]
 # executable = "zathura"
@@ -69,6 +71,5 @@ language-servers = [ "scls", "metals"]
 
 [[language]]
 name = "latex"
-# language-servers = [ "scls", "texlab" ]
-language-servers = [ "texlab" ]
+language-servers = [ "scls", "texlab" ]
 

@@ -16,5 +16,7 @@ c.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 c.window_padding = { left = 0, right = 15, top = 0, bottom = 0 }
 -- 启用滚动条
 c.enable_scroll_bar = true
+-- powershell
+c.default_prog = { 'powershell' }
 
 return c

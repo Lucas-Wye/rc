@@ -16,7 +16,22 @@ c.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 c.window_padding = { left = 0, right = 15, top = 0, bottom = 0 }
 -- 启用滚动条
 c.enable_scroll_bar = true
--- powershell
-c.default_prog = { 'powershell' }
+
+local launch_menu = {}
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	table.insert(launch_menu, {
+		label = "PowerShell",
+		args = { "pwsh.exe", "-nol" },
+	})
+	table.insert(launch_menu, {
+		label = "MSYS UCRT64",
+		args = { "cmd.exe ", "/k", "C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell bash" },
+	})
+	c.default_prog = {
+    "cmd.exe ", "/k", "C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell bash"
+    -- "powershell"
+  }
+end
+c.launch_menu = launch_menu
 
 return c

@@ -9,13 +9,13 @@ max_completion_items = 20     # set max completion results len for each group: w
 snippets_first = true         # completions will return before snippets by default
 feature_words = true          # enable completion by word
 feature_snippets = true       # enable snippets
-feature_unicode_input = true  # enable "unicode input"
+feature_unicode_input = false # enable "unicode input"
 feature_paths = true          # enable path completion
 
 # write logs to /tmp/completion.log
 [language-server.scls.environment]
 RUST_LOG = "info,simple-completion-langauge-server=info"
-LOG_FILE = "~/tmp/completion.log"
+LOG_FILE = "/tmp/hx-scls-compl.log"
 
 ################################################
 ######### texlab

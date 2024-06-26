@@ -187,15 +187,16 @@ client.focused          #ffffff #33775f #ffffff #ffffff #ffffff
 client.unfocused        #ffffff #517761 #888888 #ffffff #ffffff
 for_window [class=".*"] border pixel 1
 
-exec --no-startup-id feh --bg-scale "$HOME/bin/Sierra.jpg"
+exec --no-startup-id feh --bg-scale "$HOME/opt/Sierra.jpg"
 exec --no-startup-id fcitx5
 exec --no-startup-id alacritty
 exec --no-startup-id i3-msg 'workspace 3; exec firefox; workspace 1'
 exec --no-startup-id flatpak run com.tencent.WeChat
 # exec --no-startup-id flatpak run org.telegram.desktop
-# exec --no-startup-id $HOME/rc/screen.sh
 exec --no-startup-id $HOME/.net.sh
+exec --no-startup-id xrandr --output HDMI-1 --auto --output eDP-1 --off
 
 bindsym $mod+l exec i3lock
 bindsym Mod1+Tab workspace back_and_forth
 bindsym Print exec --no-startup-id flameshot gui -p $HOME/Downloads/screen
+

@@ -21,7 +21,6 @@ LOG_FILE = "/tmp/hx-scls-compl.log"
 ######### texlab
 ################################################
 [language-server.texlab]
-# command = "texlab"
 auxDirectory = "out"
 
 [language-server.texlab.config.texlab.build]

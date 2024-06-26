@@ -192,9 +192,9 @@ exec --no-startup-id fcitx5
 exec --no-startup-id alacritty
 exec --no-startup-id i3-msg 'workspace 3; exec firefox; workspace 1'
 exec --no-startup-id flatpak run com.tencent.WeChat
-# exec --no-startup-id flatpak run org.telegram.desktop
+exec --no-startup-id telegram-desktop
 exec --no-startup-id $HOME/.net.sh
-exec --no-startup-id xrandr --output HDMI-1 --auto --output eDP-1 --off
+exec --no-startup-id $HOME/opt/rc/screen.sh  
 
 bindsym $mod+l exec i3lock
 bindsym Mod1+Tab workspace back_and_forth

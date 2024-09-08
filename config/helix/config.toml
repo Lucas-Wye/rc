@@ -5,27 +5,20 @@ theme = "everforest_light_soft"
 [editor]
 mouse = false
 rulers = [97]
+true-color = true
 cursorline = true
 cursorcolumn = true
 bufferline = "multiple"
 line-number = "relative"
-# line-number = "absolute"
+middle-click-paste = false
+
+[editor.search]
+smart-case = false
+wrap-around = false
 
 [editor.soft-wrap]
 enable = true
 wrap-indicator = "↩ "
-
-[editor.whitespace.render]
-# space = "all"
-# tab = "all"
-newline = "none"
-
-[editor.whitespace.characters]
-# space = " "
-nbsp = "⍽"    # Non Breaking Space
-tab = "→"
-newline = "⏎"
-tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [editor.cursor-shape]
 insert = "bar"

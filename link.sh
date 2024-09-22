@@ -17,4 +17,4 @@ do
 done
 
 # add bash.env
-echo "export \$PATH=`pwd`/bash.config:\$PATH" >> $HOME/.bashrc
+echo "source `pwd`/bash.env" >> $HOME/.bashrc

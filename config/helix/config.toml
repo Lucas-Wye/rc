@@ -1,6 +1,4 @@
-# theme = "everforest_light_hard"
-# theme = "everforest_light_medium"
-theme = "everforest_light_soft"
+theme = "everforest_light"
 
 [editor]
 mouse = false

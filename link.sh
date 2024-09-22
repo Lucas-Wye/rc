@@ -15,3 +15,6 @@ do
   echo $pdot/$dotfile $HOME/.$dotfile
   ln -s $pdot/$dotfile $HOME/.$dotfile
 done
+
+# add bash.env
+echo "export \$PATH=`pwd`/bash.config:\$PATH" >> $HOME/.bashrc

@@ -1,5 +1,5 @@
 ################################################
-######### scls
+######### scls for any
 ################################################
 [language-server.scls]
 command = "simple-completion-language-server"
@@ -18,10 +18,15 @@ LOG_FILE = "/tmp/hx-scls-compl.log"
 
 
 ################################################
-######### texlab
+######### texlab for latex 
 ################################################
+[[language]]
+name = "latex"
+language-servers = [ "scls", "texlab" ]
+
 [language-server.texlab]
 auxDirectory = "out"
+latexFormatter = "latexindent"
 
 [language-server.texlab.config.texlab.build]
 onSave = true
@@ -41,13 +46,26 @@ onOpenAndSave = true
 ################################################
 ######### tinymist for typst
 ################################################
+[[language]]
+name = "typst"
+scope = "source.typst"
+injection-regex = "typst"
+roots = []
+comment-token = "//"
+file-types = ["typ"]
+indent = { tab-width = 4, unit = " " }
+text-width = 100
+rulers = [100]
+soft-wrap.wrap-at-text-width = true
+language-servers = [ "scls","tinymist" ]
+
 [language-server.tinymist]
 command = "tinymist"
-config = { exportPdf = "onSave", outputPath = "$root/out_$name.pdf", formatterMode = "typstyle" }
+config = { exportPdf = "never", outputPath = "$root/out_$name.pdf", formatterMode = "typstyle" }
 
 
 ################################################
-######### language settings
+######### more language settings
 ################################################
 [[language]]
 name = "rust"
@@ -82,20 +100,3 @@ file-types = ["scala", "sbt", "sc"]
 comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 4, unit = "  " }
-
-[[language]]
-name = "latex"
-language-servers = [ "scls", "texlab" ]
-
-[[language]]
-name = "typst"
-scope = "source.typst"
-injection-regex = "typst"
-roots = []
-comment-token = "//"
-file-types = ["typ"]
-indent = { tab-width = 4, unit = " " }
-text-width = 100
-rulers = [100]
-soft-wrap.wrap-at-text-width = true
-language-servers = [ "scls","tinymist" ]

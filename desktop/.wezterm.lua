@@ -11,7 +11,7 @@ c.font = wezterm.font {
 }
 
 -- 配色
-local materia = wezterm.color.get_builtin_schemes()['Everforest Light (Gogh)']
+local materia = wezterm.color.get_builtin_schemes()['Ef-Spring']
 
 -- 关闭时不进行确认
 c.window_close_confirmation = 'NeverPrompt'

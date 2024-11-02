@@ -55,14 +55,12 @@ comment-token = "//"
 file-types = ["typ"]
 indent = { tab-width = 4, unit = " " }
 text-width = 100
-rulers = [100]
 soft-wrap.wrap-at-text-width = true
-language-servers = [ "scls","tinymist" ]
+language-servers = [ "scls", "tinymist" ]
 
 [language-server.tinymist]
 command = "tinymist"
 config = { exportPdf = "never", outputPath = "$root/out_$name.pdf", formatterMode = "typstyle" }
-
 
 ################################################
 ######### more language settings

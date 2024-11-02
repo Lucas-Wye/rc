@@ -1,8 +1,9 @@
-theme = "base16_transparent"
+# theme = "base16_default"
+theme = "base16_terminal"
 
 [editor]
 mouse = false
-rulers = [97]
+# rulers = [97]
 true-color = true
 cursorline = true
 cursorcolumn = true

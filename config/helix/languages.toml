@@ -57,6 +57,7 @@ indent = { tab-width = 4, unit = " " }
 text-width = 100
 soft-wrap.wrap-at-text-width = true
 language-servers = [ "scls", "tinymist" ]
+# auto-format = true
 
 [language-server.tinymist]
 command = "tinymist"

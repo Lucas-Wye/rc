@@ -117,6 +117,9 @@ C-k = "hover"
 space.f = "file_picker_in_current_directory"
 space.F = "file_picker"
 
+# build on Windows
+space.m = [":write-all", ":run-shell-command make.bat z"]
+
 [keys.select]
 0 = "goto_line_start"
 "$" = "goto_line_end"

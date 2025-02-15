@@ -18,3 +18,6 @@ done
 
 # add bash.env
 echo "source `pwd`/bash.env" >> $HOME/.bashrc
+
+# for NixOS, link bash.env
+ln -s `pwd`/bash.env $HOME/.bash.env

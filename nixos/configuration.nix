@@ -158,8 +158,12 @@
     python3
     python3Packages.pip
     python3Packages.black
+    python3Packages.numpy
+    python3Packages.scipy
     python3Packages.jupyter
     python3Packages.ipython
+    python3Packages.jupyterlab
+    python3Packages.matplotlib
     python3Packages.virtualenv
     python3Packages.python-lsp-server
 

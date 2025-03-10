@@ -3,8 +3,8 @@ theme = "base16_transparent"
 [editor]
 mouse = false
 true-color = true
-cursorline = true
-cursorcolumn = true
+# cursorline = true
+# cursorcolumn = true
 bufferline = "multiple"
 line-number = "relative"
 middle-click-paste = false

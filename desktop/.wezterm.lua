@@ -53,7 +53,9 @@ c.disable_default_key_bindings = true
 local act = wezterm.action
 c.keys = {
   { key = 'Insert', mods = 'CTRL', action = act.CopyTo 'Clipboard' },
+  { key = 'c', mods = 'SHIFT|CTRL', action = act.CopyTo 'Clipboard' },
   { key = 'Insert', mods = 'SHIFT', action = act.PasteFrom 'Clipboard' }, 
+  { key = 'v', mods = 'SHIFT|CTRL', action = act.PasteFrom 'Clipboard' }, 
   -- Ctrl+Tab 遍历 tab
   { key = 'Tab', mods = 'CTRL', action = act.ActivateTabRelative(1) },
   -- Ctrl+Shift++ 字体增大
@@ -76,7 +78,7 @@ c.keys = {
   -- 上下分屏
   { key = 'h', mods = 'SHIFT|CTRL', action = act.SplitVertical{domain="CurrentPaneDomain"} },
   -- 左右分屏
-  { key = 'v', mods = 'SHIFT|CTRL', action = act.SplitHorizontal{domain="CurrentPaneDomain"} },
+  { key = 'j', mods = 'SHIFT|CTRL', action = act.SplitHorizontal{domain="CurrentPaneDomain"} },
 }
 
 return c

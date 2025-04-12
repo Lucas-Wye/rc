@@ -1,4 +1,5 @@
-theme = "base16_transparent"
+# theme = "base16_transparent"
+theme = "solarized_light"
 
 [editor]
 mouse = false
@@ -66,36 +67,11 @@ esc = [
 #   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
 # fi""",
 "change_selection"]
-"o" = [
-# """:sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false;
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
-# fi""",
-"open_below"]
-"I" = [
-# """:sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false;
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
-# fi""",
-"insert_at_line_start"]
-"A" = [
-# """:sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false;
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
-# fi""",
-"insert_at_line_end"]
-"O" = [
-# """:sh if [ -e \"/tmp/rime-state\" ] && [ \"$(cat /tmp/rime-state)\" = \"b false\" ]; then
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetAsciiMode b false;
-#   busctl call --user org.fcitx.Fcitx5 /rime org.fcitx.Fcitx.Rime1 SetSchema s easy_en;
-# fi""",
-"open_above"]
 
 0 = "goto_line_start"
 "$" = "goto_line_end"
 "^" = "goto_first_nonwhitespace"
 G = "goto_file_end"
-"%" = "match_brackets"
 esc = ["collapse_selection", "keep_primary_selection"]
 
 # Make j and k behave as they do Vim when soft-wrap is enabled
@@ -120,11 +96,12 @@ space.m = [":write-all", ":run-shell-command make.bat z"]
 # toggle to show git-ignore
 C-t = ":toggle file-picker.git-ignore"
 
+"C-/" = "toggle_comments"
+
 [keys.select]
 0 = "goto_line_start"
 "$" = "goto_line_end"
 "^" = "goto_first_nonwhitespace"
 G = "goto_file_end"
-"%" = "match_brackets"
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
-
+"C-/" = "toggle_comments"

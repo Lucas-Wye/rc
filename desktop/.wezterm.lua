@@ -11,7 +11,8 @@ c.font = wezterm.font {
 }
 
 -- 配色
-local materia = wezterm.color.get_builtin_schemes()['Ef-Spring']
+-- local materia = wezterm.color.get_builtin_schemes()['Ef-Spring']
+local materia = wezterm.color.get_builtin_schemes()['Solarized Light (Gogh)']
 
 -- 关闭时不进行确认
 c.window_close_confirmation = 'NeverPrompt'

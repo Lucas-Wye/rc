@@ -125,7 +125,7 @@ patch:
     - {click: '#', key_back_color: bgn, key_text_color: tgn}
     - {click: '/', key_back_color: bgn, key_text_color: tgn}
 
-    - {click: '~', key_back_color: bgn, key_text_color: tgn}
+    - {click: '-', key_back_color: bgn, key_text_color: tgn}
     - {click: 4}
     - {click: 5}
     - {click: 6}
@@ -140,8 +140,8 @@ patch:
     - {click: '+', key_back_color: bgn, key_text_color: tgn}
 
     - {click: Keyboard_default, key_back_color: bgn, key_text_color: 'tgn'}
-    - {click: '-', key_back_color: bgn, key_text_color: tgn}
     - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
-    - {click: 0}
     - {click: Return, key_back_color: benter, key_text_color: tenter}
+    - {click: 0}
     - {click: space1, long_click: Delete, key_back_color: bgn, key_text_color: tgn}
+    - {click: '~', key_back_color: bgn, key_text_color: tgn}

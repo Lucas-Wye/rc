@@ -149,6 +149,8 @@
     gdb
     clang
     clang-tools
+    gnumake
+    cmake
 
     cargo
     rustc
@@ -156,6 +158,7 @@
     rust-analyzer
 
     python3
+    python3Packages.uv
     python3Packages.pip
     python3Packages.black
     python3Packages.numpy
@@ -164,22 +167,21 @@
     python3Packages.ipython
     python3Packages.jupyterlab
     python3Packages.matplotlib
-    python3Packages.virtualenv
     python3Packages.python-lsp-server
 
     typst
     tinymist
     doxygen
     graphviz
-    texlive.combined.scheme-full
-    texlab
+    # texlive.combined.scheme-full
+    # texlab
 
     # Version Control
     git
     gitui
 
     # message
-    telegram-desktop
+    # telegram-desktop
 
     # proxy
     clash-verge-rev

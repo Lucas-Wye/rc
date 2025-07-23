@@ -11,4 +11,3 @@ Create-FileLink -SourceFilePath "config\helix" -LinkFilePath "$env:USERPROFILE\A
 Create-FileLink -SourceFilePath "rime" -LinkFilePath "$env:USERPROFILE\AppData\Roaming\Rime"
 Create-FileLink -SourceFilePath "desktop\.wezterm.lua" -LinkFilePath "$env:USERPROFILE\.wezterm.lua"
 Create-FileLink -SourceFilePath "dotfiles\gitconfig" -LinkFilePath "$env:USERPROFILE\.gitconfig"
-

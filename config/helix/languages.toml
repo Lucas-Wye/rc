@@ -1,5 +1,5 @@
 ################################################
-######### scls for any
+######### scls for any #########################
 ################################################
 [language-server.scls]
 command = "simple-completion-language-server"
@@ -18,7 +18,7 @@ LOG_FILE = "/tmp/hx-scls-compl.log"
 
 
 ################################################
-######### texlab for latex 
+######### texlab for latex #####################
 ################################################
 [[language]]
 name = "latex"
@@ -44,7 +44,7 @@ onOpenAndSave = true
 
 
 ################################################
-######### tinymist for typst
+######### tinymist for typst ###################
 ################################################
 [[language]]
 name = "typst"
@@ -63,8 +63,20 @@ language-servers = [ "scls", "tinymist" ]
 command = "tinymist"
 config = { exportPdf = "never", outputPath = "$root/out_$name.pdf", formatterMode = "typstyle" }
 
+
 ################################################
-######### more language settings
+######### svls for verilog #####################
+################################################
+[[language]]
+name = "verilog"
+language-servers = ["scls", "svls"]
+
+[language-server.svls]
+command = "svls"
+
+
+################################################
+######### more language settings ###############
 ################################################
 [[language]]
 name = "rust"

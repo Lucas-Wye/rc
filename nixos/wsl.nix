@@ -38,18 +38,18 @@
     curl 
     unzip 
     tmux 
-    yazi 
-    ripgrep 
-    fastfetch 
-    xz 
-    aria2 
-    nmap 
-    zstd 
-    bottom 
+    yazi
+    ripgrep
+    fastfetch
+    xz
+    aria2
+    nmap
+    zstd
+    bottom
     iotop 
     iftop 
-    bat 
-    dust 
+    bat
+    dust
     fish 
     delta
 

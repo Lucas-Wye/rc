@@ -121,7 +121,6 @@
     unzip
     tmux
     yazi
-    starship
     ripgrep
     fastfetch
     xz

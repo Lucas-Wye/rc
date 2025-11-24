@@ -21,7 +21,7 @@ c.window_close_confirmation = 'NeverPrompt'
 c.enable_tab_bar = true
 c.hide_tab_bar_if_only_one_tab = true
 c.show_tab_index_in_tab_bar = false
-c.tab_max_width = 25
+c.tab_max_width = 16
 
 -- 更明显的滚动条
 materia.scrollbar_thumb = '#cccccc'
@@ -37,17 +37,12 @@ c.window_padding = { left = 0, right = 15, top = 0, bottom = 0 }
 c.enable_scroll_bar = true
 
 -- 启动菜单的一些启动项
-local launch_menu = {}
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
-	table.insert(launch_menu, {
-		label = "PowerShell",
-		args = { "pwsh.exe", "-nol" },
-	})
-	c.default_prog = { 
+	c.default_prog = {
     "powershell"
   }
 end
-c.launch_menu = launch_menu
+c.launch_menu = {}
 
 -- 取消所有默认的热键
 c.disable_default_key_bindings = true

@@ -1,8 +1,14 @@
-general.live_config_reload = true
+[general]
+# working_directory = "D:\\"
+live_config_reload = true
+
 [window]
 padding = { x = 7, y = 7}
-dimensions = { columns = 150, lines = 30}
+dimensions = { columns = 75, lines = 30}
 opacity = 1.0
+
+[terminal.shell]
+program = "nu"
 
 [env]
 TERM = 'xterm-256color'

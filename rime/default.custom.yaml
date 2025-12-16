@@ -13,7 +13,7 @@ patch:
     Shift_R: inline_ascii
     Control_L: noop
     Control_R: noop
-    Caps_Lock: clear
+    Caps_Lock: commit_code
     Eisu_toggle: noop
   switcher/hotkeys:
     - Control+grave
